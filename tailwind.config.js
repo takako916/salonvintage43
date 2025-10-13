@@ -14,6 +14,8 @@ module.exports = {
       },
       fontFamily: {
         sans: ["system-ui", "-apple-system", "sans-serif"],
+        "bebas-neue": ["var(--font-bebas-neue)", "sans-serif"],
+        "oswald": ["var(--font-oswald)", "sans-serif"],
       },
     },
   },

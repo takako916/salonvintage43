@@ -11,7 +11,7 @@ export default function Section({ id, title, children, className = "" }: Section
   return (
     <section id={id} className={`section-offset py-16 px-4 sm:px-6 lg:px-8 ${className}`}>
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-3xl sm:text-4xl font-bold text-ink text-center mb-12">
+        <h2 className="text-3xl sm:text-4xl font-bold text-ink text-center mb-12 font-oswald" style={{ fontFamily: 'var(--font-oswald), sans-serif' }}>
           {title}
         </h2>
         {children}

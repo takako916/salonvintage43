@@ -4,6 +4,7 @@ import Section from "../components/Section";
 import ProgramList from "../components/ProgramList";
 import PosterCard from "../components/PosterCard";
 import Footer from "../components/Footer";
+import AnimationsTabs from "../components/AnimationsTabs";
 import { EVENT } from "./data";
 
 export default function Home() {
@@ -14,28 +15,43 @@ export default function Home() {
       <main id="main">
         <Hero />
         
+        {/* Animations Section */}
+        <Section id="animations" title="ANIMATIONS & EXPOSANTS" className="bg-orange-50">
+          <div className="max-w-6xl mx-auto">
+            <div className="text-center mb-8">
+              <h2 className="text-2xl font-semibold text-ink mb-4">
+                🎭 Animations & Spectacles 🛍️
+              </h2>
+              <p className="text-lg text-brand font-medium">
+                Un programme riche en animations et exposants pour tous les âges !
+              </p>
+            </div>
+            <AnimationsTabs />
+          </div>
+        </Section>
+        
         {/* Informations Section */}
-        <Section id="info" title="Informations">
+        <Section id="info" title="INFOS PRATIQUES" className="bg-slate-50">
           <div className="max-w-4xl mx-auto space-y-8">
             {/* Event Overview */}
             <div className="card text-center">
               <div className="text-lg text-gray-700 leading-relaxed space-y-4">
-                <p className="text-xl font-semibold text-brand mb-4">
-                  Plongez dans l&apos;univers des années 60 à 80 !
-                </p>
+                <h2 className="text-xl font-semibold text-brand mb-4">
+                  Salon du Vintage Haute-Loire - Brocante et événement familial
+                </h2>
                 <p className="text-left">
-                  Des exposants passionnés vous accueillent dans leurs univers et vous proposent un véritable voyage dans le temps 🕺💃
+                  Le <strong>Centre socio-culturel de Blavozy</strong> accueille le premier salon du vintage de Haute-Loire ! Des exposants passionnés vous proposent un véritable voyage dans le temps avec leurs objets rétro, déco vintage et accessoires des années 60 à 80 🕺💃
                 </p>
                 <div className="text-left max-w-2xl mx-auto">
-                  <p className="font-medium mb-2">🎵 Au programme :</p>
+                  <h3 className="font-medium mb-2">🎵 Au programme :</h3>
                   <ul className="space-y-2 text-base">
-                    <li>🎸 Concerts & animations</li>
+                    <li>🎸 <strong>Concerts rock</strong> & animations musicales</li>
                     <li>💉 Tatouage & blind test spécial années 80</li>
-                    <li>🕺 Battle Hip-Hop Old School</li>
+                    <li>🕺 <strong>Battle de danse hip-hop</strong> Old School</li>
                     <li>👗 Défilé & concours Miss & Mister Vintage 2025</li>
-                    <li>🎮 Bornes d&apos;arcade, baby-foot, accessoires, claquettes & bonne humeur garantie !</li>
+                    <li>🎮 Bornes d&apos;arcade, baby-foot, <strong>déco rétro</strong> & bonne humeur garantie !</li>
                     <li>🍔 Espace restauration sur place</li>
-                    <li>👨‍👩‍👧‍👦 Ambiance conviviale et familiale — il y en aura pour tous les goûts !</li>
+                    <li>👨‍👩‍👧‍👦 <strong>Événement familial</strong> — il y en aura pour tous les âges !</li>
                   </ul>
                   <p className="mt-4 font-medium text-brand">
                     Et ce n&apos;est pas tout… 🤫
@@ -73,13 +89,13 @@ export default function Home() {
 
               <div className="card">
                 <h3 className="text-xl font-semibold text-ink mb-4">
-                  Accès depuis Le Puy-en-Velay et la région
+                  Accès depuis Le Puy-en-Velay et la région Haute-Loire
                 </h3>
                 <div className="space-y-4 text-left">
                   <div>
-                    <h4 className="font-semibold text-gray-800 mb-2">🚗 En voiture :</h4>
+                    <h4 className="font-semibold text-gray-800 mb-2">🚗 En voiture depuis Le Puy-en-Velay :</h4>
                     <ul className="space-y-1 text-gray-700">
-                      <li>Depuis Le Puy-en-Velay : 5 minutes (D590)</li>
+                      <li><strong>Depuis Le Puy-en-Velay</strong> : 5 minutes (D590) - <em>Sortie famille idéale !</em></li>
                       <li>Depuis Brioude : 45 minutes (N102)</li>
                       <li>Depuis Yssingeaux : 30 minutes (D103)</li>
                       <li>Depuis Saint-Étienne : 1h15 (A72)</li>
@@ -87,12 +103,13 @@ export default function Home() {
                   </div>
                   
                   <div>
-                    <h4 className="font-semibold text-gray-800 mb-2">📍 Localisation :</h4>
+                    <h4 className="font-semibold text-gray-800 mb-2">📍 Localisation - Centre socio-culturel Blavozy :</h4>
                     <ul className="space-y-1 text-gray-700">
-                      <li>Blavozy - Commune limitrophe du Puy-en-Velay</li>
-                      <li>Centre socio-culturel - Au cœur du village</li>
+                      <li><strong>Blavozy</strong> - Commune limitrophe du Puy-en-Velay</li>
+                      <li><strong>Centre socio-culturel</strong> - Au cœur du village</li>
                       <li>Parking gratuit - À proximité immédiate</li>
                       <li>Accès handicapé - Site accessible</li>
+                      <li><em>Événement familial parfait pour une sortie avec enfants</em></li>
                     </ul>
                   </div>
                   
@@ -137,12 +154,12 @@ export default function Home() {
         </Section>
 
         {/* Programme Section */}
-        <Section id="program" title="Programme" className="bg-slate-100">
+        <Section id="program" title="PROGRAMME" className="bg-orange-50">
           <ProgramList />
         </Section>
 
         {/* Exposants Section */}
-        <Section id="exhibitors" title="Appel aux exposants">
+        <Section id="exhibitors" title="APPEL AUX EXPOSANTS" className="bg-slate-50">
           <div className="max-w-4xl mx-auto space-y-8">
             {/* Introduction */}
             <div className="card text-center">
@@ -151,16 +168,16 @@ export default function Home() {
               </h3>
               <div className="text-gray-700 leading-relaxed space-y-4 text-left">
                 <p>
-                  Le Salon Vintage de Blavozy (Haute-Loire) prépare sa 1ère édition les 14, 15 et 16 novembre 2025 🎉
+                  Le <strong>Salon du Vintage Haute-Loire</strong> à Blavozy prépare sa 1ère édition les 14, 15 et 16 novembre 2025 🎉
                 </p>
                 <p>
-                  À seulement quelques minutes du Puy-en-Velay, cet événement fera voyager le public dans les années 60 à 80 : concerts, battle de danse old school, défilé, blind test, tatouage, restauration, jeux rétro, etc.
+                  À seulement quelques minutes du <strong>Puy-en-Velay</strong>, cet <strong>événement familial</strong> fera voyager le public dans les années 60 à 80 : <strong>concerts rock</strong>, <strong>battle de danse hip-hop</strong> old school, défilé, blind test, tatouage, restauration, <strong>déco rétro</strong>, etc.
                 </p>
                 <p>
                   Une ambiance conviviale et familiale vous attend, idéale pour petits et grands 👨‍👩‍👧‍👦
                 </p>
                 <p className="text-brand font-medium">
-                  Les exposants sont déjà nombreux, mais il reste encore quelques places — notamment pour les passionnés de vinyles 🎶, affiches & posters 🎨, vêtements vintage 👗, objets rétro & déco 🕰️.
+                  Les exposants sont déjà nombreux, mais il reste encore quelques places — notamment pour les passionnés de vinyles 🎶, affiches & posters 🎨, vêtements vintage 👗, <strong>objets rétro & déco</strong> 🕰️.
                 </p>
                 <div className="mt-6">
                   <a
@@ -209,9 +226,10 @@ export default function Home() {
         </Section>
 
         {/* Contact Section */}
-        <Section id="contact" title="Contact" className="bg-slate-100">
-          <div className="max-w-2xl mx-auto text-center">
-            <div className="card">
+        <Section id="contact" title="CONTACT" className="bg-orange-50">
+          <div className="max-w-4xl mx-auto">
+            {/* Main Contact Card */}
+            <div className="card text-center mb-8">
               <h3 className="text-xl font-semibold text-ink mb-4">
                 Une question ?
               </h3>
@@ -240,6 +258,47 @@ export default function Home() {
               <p className="text-gray-600 text-sm mt-4">
                 Nous vous répondrons dans les 48 heures
               </p>
+            </div>
+
+            {/* Production Directe Introduction */}
+            <div className="card">
+              <div className="flex flex-col md:flex-row items-center gap-6">
+                {/* Photos */}
+                <div className="flex flex-col sm:flex-row gap-4">
+                  <div className="text-center">
+                    <div className="w-24 h-24 rounded-full mx-auto mb-2 overflow-hidden">
+                      <img 
+                        src="/images/victor-moutbeka.jpg" 
+                        alt="Victor MOUTBEKA - Organisateur et concepteur d'événement Production Directe" 
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
+                    <p className="text-sm text-gray-600">Victor MOUTBEKA</p>
+                  </div>
+                  <div className="text-center">
+                    <img 
+                      src="/images/production_directe_logo.jpg" 
+                      alt="Logo Production Directe - Organisateur du Salon Vintage de Blavozy" 
+                      className="w-24 h-24 mx-auto mb-2 rounded-lg object-cover"
+                    />
+                    <p className="text-sm text-gray-600">Production Directe</p>
+                  </div>
+                </div>
+                
+                {/* Text Content */}
+                <div className="flex-1 text-center md:text-left">
+                  <h4 className="text-lg font-semibold text-ink mb-2">
+                    Organisateur & Concepteur d&apos;Événement
+                  </h4>
+                  <p className="text-gray-700 mb-2">
+                    <strong>Production Directe</strong> (Victor MOUTBEKA)
+                  </p>
+                  <p className="text-gray-600 text-sm">
+                    Spécialisé dans la création et l&apos;organisation d&apos;événements culturels, 
+                    Production Directe vous propose une expérience unique dans l&apos;univers des années 60-80.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </Section>
