@@ -5,6 +5,10 @@ export interface ProgramItem {
 
 export const EVENT = {
   name: "1ère édition Vintage le Salon",
+  nameParts: {
+    prefix: "1ère édition ",
+    highlight: "Vintage le Salon"
+  },
   date: "14–16 novembre 2025",
   city: "Blavozy (Haute-Loire)",
   venue: "Centre socio-culturel de Blavozy",

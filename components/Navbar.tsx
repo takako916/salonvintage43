@@ -27,7 +27,8 @@ export default function Navbar() {
               className="h-10 w-auto mr-3"
             />
             <span style={{ fontFamily: 'var(--font-oswald), sans-serif' }}>
-              {EVENT.name}
+              {EVENT.nameParts.prefix}
+              <span className="text-orange-500">{EVENT.nameParts.highlight}</span>
             </span>
           </Link>
 
