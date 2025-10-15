@@ -28,7 +28,8 @@ export default function Navbar() {
             />
             <span style={{ fontFamily: 'var(--font-oswald), sans-serif' }}>
               {EVENT.nameParts.prefix}
-              <span className="text-orange-500">{EVENT.nameParts.highlight}</span>
+              <span className="text-orange-500">Vintage le Salon</span>
+              <span className="text-slate-700"> à Blavozy</span>
             </span>
           </Link>
 
