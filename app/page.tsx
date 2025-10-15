@@ -279,7 +279,7 @@ export default function Home() {
                     <img 
                       src="/images/production_directe_logo.jpg" 
                       alt="Logo Production Directe - Organisateur du Salon Vintage de Blavozy" 
-                      className="w-20 h-20 mx-auto mb-2 rounded-lg object-cover"
+                      className="w-20 h-24 mx-auto mb-2 rounded-lg object-contain"
                     />
                     <p className="text-sm text-gray-600">Production Directe</p>
                   </div>
