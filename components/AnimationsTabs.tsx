@@ -130,18 +130,19 @@ export default function AnimationsTabs() {
   return (
     <div className="w-full">
       {/* Tab Navigation */}
-      <div className="flex flex-wrap justify-center gap-2 mb-8">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-2 mb-8 max-w-4xl mx-auto">
         {/* Tout Tab */}
         <button
           onClick={() => setActiveTab("tout")}
-          className={`px-4 py-2 rounded-lg font-medium transition-all duration-200 ${
+          className={`px-3 py-2 rounded-lg font-medium transition-all duration-200 text-sm sm:text-base ${
             activeTab === "tout"
               ? "bg-brand text-white shadow-md"
               : "bg-gray-100 text-gray-700 hover:bg-gray-200"
           }`}
         >
-          <span className="mr-2">🌟</span>
-          Tout
+          <span className="mr-1 sm:mr-2">🌟</span>
+          <span className="hidden sm:inline">Tout</span>
+          <span className="sm:hidden">Tout</span>
         </button>
         
         {/* Other Tabs */}
@@ -149,14 +150,18 @@ export default function AnimationsTabs() {
           <button
             key={tab.id}
             onClick={() => setActiveTab(tab.id)}
-            className={`px-4 py-2 rounded-lg font-medium transition-all duration-200 ${
+            className={`px-3 py-2 rounded-lg font-medium transition-all duration-200 text-sm sm:text-base ${
               activeTab === tab.id
                 ? "bg-brand text-white shadow-md"
                 : "bg-gray-100 text-gray-700 hover:bg-gray-200"
             }`}
           >
-            <span className="mr-2">{tab.icon}</span>
-            {tab.title}
+            <span className="mr-1 sm:mr-2">{tab.icon}</span>
+            <span className="hidden lg:inline">{tab.title}</span>
+            <span className="lg:hidden">
+              {tab.title.split(' ')[0]}
+              {tab.title.includes('&') && ' &'}
+            </span>
           </button>
         ))}
       </div>
