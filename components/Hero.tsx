@@ -43,9 +43,13 @@ export default function Hero() {
             className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-4 leading-tight text-white drop-shadow-lg font-bebas-neue tracking-wider"
             style={{ fontFamily: 'var(--font-bebas-neue), sans-serif' }}
           >
-            {EVENT.nameParts.prefix}
-            <span className="text-orange-400">Vintage le Salon</span>
-            <span className="text-white"> à Blavozy</span>
+            <div className="block">
+              {EVENT.nameParts.prefix}
+              <span className="text-orange-400">Vintage le Salon</span>
+            </div>
+            <div className="block text-white">
+              À Blavozy
+            </div>
           </h1>
 
           {/* Event Date */}
