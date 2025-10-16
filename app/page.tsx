@@ -40,11 +40,12 @@ export default function Home() {
                   Salon du Vintage Haute-Loire - Brocante et vide-grenier familial
                 </h2>
                 <p className="text-left">
-                  Le <strong>Centre socio-culturel de Blavozy</strong> accueille le premier salon du vintage de Haute-Loire ! Ce <strong>vide-grenier haute-loire</strong> et cette <strong>brocante 43</strong> vous proposent un véritable voyage dans le temps avec leurs objets rétro, déco vintage et accessoires des années 60 à 80 🕺💃
+                  Le <strong>Centre socio-culturel de Blavozy</strong> accueille le premier salon du vintage de Haute-Loire ! Un événement unique qui combine <strong>brocante haute-loire</strong>, <strong>vide-grenier 43</strong> et animations vintage pour vous faire voyager dans les années 60 à 80 🕺💃
                 </p>
                 <div className="text-left max-w-2xl mx-auto">
                   <h3 className="font-medium mb-2">🎵 Au programme :</h3>
                   <ul className="space-y-2 text-base">
+                    <li>🛍️ <strong>Brocante haute-loire</strong> & vide-grenier avec exposants spécialisés</li>
                     <li>🎸 <strong>Concerts rock</strong> & animations musicales</li>
                     <li>💉 Tatouage & blind test spécial années 80</li>
                     <li>🕺 <strong>Battle de danse hip-hop</strong> Old School</li>
