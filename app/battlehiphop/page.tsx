@@ -1,4 +1,6 @@
 import { Metadata } from "next";
+import Link from "next/link";
+import Image from "next/image";
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
 import JuryDJSection from "../../components/JuryDJSection";
@@ -6,10 +8,10 @@ import { EVENT } from "../data";
 
 export const metadata: Metadata = {
   title: "Battle All Styles Old School",
-  description: "Après plusieurs années d'absence, le RKD Battle \"Rien Ke L'Debout\" fait son grand retour au Vintage le Salon ! Un concept revisité autour du All Style Old School, sur des sons Hip-Hop d'époque. Dimanche 14h au Centre socio-culturel de Blavozy.",
+  description: "Après plusieurs années d'absence, le RKD Battle Rien Ke L'Debout fait son grand retour au Vintage le Salon ! Un concept revisité autour du All Style Old School, sur des sons Hip-Hop d'époque. Dimanche 14h au Centre socio-culturel de Blavozy.",
   openGraph: {
     title: "Battle All Styles Old School | Vintage le Salon",
-    description: "RKD Battle \"Rien Ke L'Debout\" - All Style Old School sur des sons Hip-Hop d'époque. Dimanche 14h à Blavozy.",
+    description: "RKD Battle Rien Ke L'Debout - All Style Old School sur des sons Hip-Hop d'époque. Dimanche 14h à Blavozy.",
     images: ["/images/animations/danse/battle-hiphop.png"],
   },
 };
@@ -36,7 +38,7 @@ export default function BattleHipHop() {
                 Battle All Styles Old School
               </h1>
               <p className="text-xl text-gray-200">
-                RKD Battle "Rien Ke L'Debout"
+                RKD Battle &ldquo;Rien Ke L&rsquo;Debout&rdquo;
               </p>
             </div>
           </div>
@@ -52,11 +54,11 @@ export default function BattleHipHop() {
               
               <div className="prose prose-lg max-w-none">
                 <p className="text-gray-700 leading-relaxed mb-4">
-                  Après plusieurs années d'absence, le <strong>RKD Battle "Rien Ke L'Debout"</strong> fait son grand retour au Vintage le Salon ! 💥
+                  Après plusieurs années d&rsquo;absence, le <strong>RKD Battle &ldquo;Rien Ke L&rsquo;Debout&rdquo;</strong> fait son grand retour au Vintage le Salon ! 💥
                 </p>
                 
                 <p className="text-gray-700 leading-relaxed mb-4">
-                  Un concept revisité autour du <strong>All Style Old School</strong>, sur des sons Hip-Hop d'époque.
+                  Un concept revisité autour du <strong>All Style Old School</strong>, sur des sons Hip-Hop d&rsquo;époque.
                 </p>
                 
                 <p className="text-gray-700 leading-relaxed mb-6">
@@ -103,7 +105,7 @@ export default function BattleHipHop() {
                 </div>
 
                 <div className="text-center mt-8">
-                  <a
+                  <Link
                     href="/#animations"
                     className="btn-primary inline-flex items-center gap-2"
                   >
@@ -121,7 +123,7 @@ export default function BattleHipHop() {
                       />
                     </svg>
                     <span>Retour aux animations</span>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>

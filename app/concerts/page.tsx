@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import Link from "next/link";
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
 import { EVENT } from "../data";
@@ -35,7 +36,7 @@ export default function Concerts() {
                 Concerts Live
               </h1>
               <p className="text-xl text-gray-200">
-                MAH'NA - Chanson française rétro
+                MAH&rsquo;NA - Chanson française rétro
               </p>
             </div>
           </div>
@@ -46,12 +47,12 @@ export default function Concerts() {
           <div className="container mx-auto px-4 max-w-4xl">
             <div className="card">
               <h2 className="text-3xl font-bold text-brand mb-6">
-                MAH'NA revisite les classiques français
+                MAH&rsquo;NA revisite les classiques français
               </h2>
               
               <div className="prose prose-lg max-w-none">
                 <p className="text-gray-700 leading-relaxed mb-4">
-                  🎶 <strong>MAH'NA</strong> revisite avec passion les plus grands classiques de la chanson française des années 60 à 80.
+                  🎶 <strong>MAH&rsquo;NA</strong> revisite avec passion les plus grands classiques de la chanson française des années 60 à 80.
                 </p>
                 
                 <p className="text-gray-700 leading-relaxed mb-6">
@@ -66,7 +67,7 @@ export default function Concerts() {
                     <li><strong>Date :</strong> Vendredi 14 novembre 2025</li>
                     <li><strong>Heure :</strong> 19h30 - 21h45</li>
                     <li><strong>Lieu :</strong> {EVENT.venue}, {EVENT.city}</li>
-                    <li><strong>Artiste :</strong> MAH'NA</li>
+                    <li><strong>Artiste :</strong> MAH&rsquo;NA</li>
                     <li><strong>Répertoire :</strong> Chanson française années 60-80</li>
                     <li><strong>Entrée :</strong> Gratuit</li>
                   </ul>
@@ -77,7 +78,7 @@ export default function Concerts() {
                     🎤 Au programme
                   </h3>
                   <p className="text-gray-700 mb-4">
-                    Venez découvrir ou redécouvrir les grands classiques de la chanson française dans une ambiance chaleureuse et conviviale. MAH'NA vous propose un voyage musical dans le temps !
+                    Venez découvrir ou redécouvrir les grands classiques de la chanson française dans une ambiance chaleureuse et conviviale. MAH&rsquo;NA vous propose un voyage musical dans le temps !
                   </p>
                   <ul className="space-y-2 text-gray-700 list-disc list-inside">
                     <li>Reprises des plus grands tubes français</li>
@@ -89,12 +90,12 @@ export default function Concerts() {
 
                 <div className="bg-brand/5 p-6 rounded-lg mb-6 border-l-4 border-brand">
                   <p className="text-gray-700 italic">
-                    "Une soirée parfaite pour lancer le weekend vintage ! Venez nombreux pour profiter de ce concert exceptionnel et démarrer l'événement dans une ambiance musicale des années d'or de la chanson française."
+                    &ldquo;Une soirée parfaite pour lancer le weekend vintage ! Venez nombreux pour profiter de ce concert exceptionnel et démarrer l&rsquo;événement dans une ambiance musicale des années d&rsquo;or de la chanson française.&rdquo;
                   </p>
                 </div>
 
                 <div className="text-center mt-8">
-                  <a
+                  <Link
                     href="/#animations"
                     className="btn-primary inline-flex items-center gap-2"
                   >
@@ -112,7 +113,7 @@ export default function Concerts() {
                       />
                     </svg>
                     <span>Retour aux animations</span>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
