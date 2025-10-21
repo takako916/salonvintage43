@@ -8,11 +8,11 @@ export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const navItems = [
-    { href: "#animations", label: "ANIMATIONS & EXPOSANTS" },
-    { href: "#info", label: "INFOS PRATIQUES" },
-    { href: "#program", label: "PROGRAMME" },
-    { href: "#exhibitors", label: "APPEL AUX EXPOSANTS" },
-    { href: "#contact", label: "CONTACT" },
+    { href: "/#animations", label: "ANIMATIONS & EXPOSANTS" },
+    { href: "/#info", label: "INFOS PRATIQUES" },
+    { href: "/#program", label: "PROGRAMME" },
+    { href: "/#exhibitors", label: "APPEL AUX EXPOSANTS" },
+    { href: "/#contact", label: "CONTACT" },
   ];
 
   return (
