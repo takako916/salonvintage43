@@ -12,13 +12,13 @@ export default function JuryDJSection() {
     {
       name: "Léyon",
       role: "Jury",
-      imagePath: "/images/jury/leyon.jpeg",
+      imagePath: "/images/jury/leyon.jpeg?v=2",
       placeholder: "👤"
     },
     {
       name: "Lego",
       role: "Jury",
-      imagePath: "/images/jury/Adilo.jpeg",
+      imagePath: "/images/jury/Adilo.jpeg?v=2",
       placeholder: "👤"
     }
   ];
