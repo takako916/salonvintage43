@@ -25,9 +25,9 @@ const tabContents: TabContent[] = [
     content: [
       {
         title: "Concerts Live",
-        description: "MAH’NA revisite avec passion les plus grands classiques de la chanson française des années 60 à 80. Ambiance rétro garantie ! 🎶",
+        description: "MAH'NA revisite avec passion les plus grands classiques de la chanson française des années 60 à 80. Ambiance rétro garantie ! 🎶",
         image: "/images/animations/musique/concerts-live.png",
-        link: "#concerts",
+        link: "/concerts",
         showMoreLink: true,
         dateTime: "Vendredi 19h30-21h45"
       },
@@ -35,7 +35,7 @@ const tabContents: TabContent[] = [
         title: "Blind test spécial années 80",
         description: "Teste tes connaissances musicales et amuse-toi entre amis ! Cadeaux à la clé ! 🎧",
         image: "/images/animations/musique/blind-test.png",
-        link: "#blindtest",
+        link: "/blindtest",
         showMoreLink: false,
         dateTime: "Dimanche 13h"
       }
@@ -50,7 +50,7 @@ const tabContents: TabContent[] = [
         title: "Battle All Styles Old School",
         description: "Après plusieurs années d'absence, le RKD Battle \"Rien Ke L'Debout\" fait son grand retour au Vintage le Salon ! 💥 Un concept revisité autour du All Style Old School, sur des sons Hip-Hop d'époque. 🕺 Danseurs, sortez vos plus belles tenues Old School et montrez votre style !",
         image: "/images/animations/danse/battle-hiphop.png",
-        link: "#battle",
+        link: "/battlehiphop",
         showMoreLink: true,
         dateTime: "Dimanche 14h"
       },
@@ -58,7 +58,7 @@ const tabContents: TabContent[] = [
         title: "Défilé de Mode Vintage",
         description: "Admirez les plus beaux looks vintage défilant sur scène. Participe au défilé de mode vintage du salon !  Inscris-toi dès maintenant via notre page officielle.  🎟️ Entrée gratuite pour les participants.  👗 Nous recherchons 2 modèles femmes et 2 modèles hommes – Pass week-end offert.",
         image: "/images/animations/danse/defile-mode.png",
-        link: "#defile",
+        link: "/defile",
         showMoreLink: false,
         dateTime: "Samedi 15h"      
       },
@@ -66,21 +66,21 @@ const tabContents: TabContent[] = [
         title: "Concours Miss & Mister Vintage 2025",
         description: "Élection de beauté avec jury de professionnels et couronnement officiel.",
         image: "/images/animations/danse/concours-vintage.png",
-        link: "#concours",
+        link: "/concours",
         showMoreLink: false, 
       },
       {
         title: "Démo & Initiation de Claquettes",
         description: "Assistez à une démonstration de claquettes et essayez quelques pas vous-même dans une ambiance conviviale.",
         image: "/images/animations/danse/claquettes.png",
-        link: "#claquettes",
+        link: "/claquettes",
         showMoreLink: false
       },
       {
         title: "Initiation au Lindy Hop",
         description: "Découvre ce swing des années folles avec nos danseurs passionnés.",
         image: "/images/animations/danse/lindyhop.png",
-        link: "#lindyhop",
+        link: "/lindyhop",
         showMoreLink: false,
         dateTime: "Samedi 18h-19h"
       },
@@ -88,7 +88,7 @@ const tabContents: TabContent[] = [
         title: "Bal Swing",
         description: "Place à la danse ! Enfile ta plus belle tenue rétro et viens partager un moment festif sur les rythmes swing ! 🎷",
         image: "/images/animations/danse/swing.png",
-        link: "#balswing",
+        link: "/balswing",
         showMoreLink: false,
         dateTime: "Samedi 19h-21h"
       },
@@ -103,15 +103,15 @@ const tabContents: TabContent[] = [
         title: "Bornes d'Arcade Rétro",
         description: "Retrouvez les sensations d'antan avec nos bornes d'arcade authentiques.",
         image: "/images/animations/jeux/arcade-retro.png",
-        link: "#arcade",
+        link: "/arcade",
         showMoreLink: false,
         dateTime: "Tout le weekend"
       },
       {
         title: "Tournoi de baby foot",
-        description: " Forme ton équipe et rejoins le tournoi !  💸 Inscription : 10 € par équipe  🏆 L’équipe gagnante repart avec 50 € de prize money.  Les inscriptions sont ouvertes !",
+        description: " Forme ton équipe et rejoins le tournoi !  💸 Inscription : 10 € par équipe  🏆 L'équipe gagnante repart avec 50 € de prize money.  Les inscriptions sont ouvertes !",
         image: "/images/animations/jeux/babyfoot.png",
-        link: "#activites",
+        link: "/babyfoot",
         showMoreLink: false,
         dateTime: "Samedi 16h"
       },
@@ -119,7 +119,7 @@ const tabContents: TabContent[] = [
         title: "Concours de Hula Hoop",
         description: "Viens défier tes amis dans une ambiance fun et décontractée ! 🎁 Cadeaux à gagner pour les finalistes. 👉 Battle Hula Hoop Top 8 : qui sera le grand gagnant ?",
         image: "/images/animations/jeux/hulahoop.png",
-        link: "#hulahoop",
+        link: "/hulahoop",
         showMoreLink: false,
         dateTime: "Samedi 14h"
       }
@@ -134,7 +134,7 @@ const tabContents: TabContent[] = [
         title: "Tatouage",
         description: "Offrez-vous un tatouage unique dans l'esprit vintage de l'événement.",
         image: "/images/animations/art/tatoo.png",
-        link: "#tatouage",
+        link: "/tatouage",
         showMoreLink: false,
         dateTime: "Tout le weekend"
       },
@@ -142,15 +142,15 @@ const tabContents: TabContent[] = [
         title: "Bijoux Vintage Réinventés",
         description: "Créations uniques à partir de boutons anciens et bijoux chinés, transformés en accessoires au charme rétro.",
         image: "/images/animations/art/bijoux-vintage.png",
-        link: "#bijoux",
+        link: "/bijoux",
         showMoreLink: false,
         dateTime: "Tout le weekend"
       },
       {
         title: "Atelier Robotique",
-        description: "Plonge dans la peau d’un programmeur de jeux ! Découvre la programmation informatique à travers l’univers du rétrogaming. Atelier ludique et accessible à tous.",
+        description: "Plonge dans la peau d'un programmeur de jeux ! Découvre la programmation informatique à travers l'univers du rétrogaming. Atelier ludique et accessible à tous.",
         image: "/images/animations/art/robotique.png",
-        link: "#enfants",
+        link: "/robotique",
         showMoreLink: false,
         dateTime: "Samedi 10h"
       }

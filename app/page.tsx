@@ -83,7 +83,8 @@ export default function Home() {
                   <div>
                     <span className="font-medium text-brand">Lieu :</span>
                     <p className="text-gray-700">{EVENT.venue}</p>
-                    <p className="text-gray-600 text-sm">{EVENT.city}</p>
+                    <p className="text-gray-600 text-sm">8 Pl. Félix Tempère</p>
+                    <p className="text-gray-600 text-sm">43700 Blavozy</p>
                   </div>
                 </div>
               </div>
