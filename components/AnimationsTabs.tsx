@@ -13,6 +13,7 @@ interface TabContent {
     image: string;
     link: string;
     showMoreLink?: boolean;
+    dateTime?: string;
   }[];
 }
 
@@ -24,17 +25,19 @@ const tabContents: TabContent[] = [
     content: [
       {
         title: "Concerts Live",
-        description: "Des concerts live avec des artistes locaux et régionaux.",
+        description: "MAH’NA revisite avec passion les plus grands classiques de la chanson française des années 60 à 80. Ambiance rétro garantie ! 🎶",
         image: "/images/animations/musique/concerts-live.png",
         link: "#concerts",
-        showMoreLink: true
+        showMoreLink: true,
+        dateTime: "Vendredi 19h30-21h45"
       },
       {
         title: "Blind test spécial années 80",
-        description: "Testez vos connaissances musicales et gagnez des lots vintage !",
+        description: "Teste tes connaissances musicales et amuse-toi entre amis ! Cadeaux à la clé ! 🎧",
         image: "/images/animations/musique/blind-test.png",
         link: "#blindtest",
-        showMoreLink: false
+        showMoreLink: false,
+        dateTime: "Dimanche 13h"
       }
     ]
   },
@@ -44,25 +47,27 @@ const tabContents: TabContent[] = [
     icon: "🕺",
     content: [
       {
-        title: "Battle Hip-Hop Old School",
-        description: "Montrez vos talents de danse dans une ambiance compétitive mais amicale.",
+        title: "Battle All Styles Old School",
+        description: "Après plusieurs années d'absence, le RKD Battle \"Rien Ke L'Debout\" fait son grand retour au Vintage le Salon ! 💥 Un concept revisité autour du All Style Old School, sur des sons Hip-Hop d'époque. 🕺 Danseurs, sortez vos plus belles tenues Old School et montrez votre style !",
         image: "/images/animations/danse/battle-hiphop.png",
         link: "#battle",
-        showMoreLink: true
+        showMoreLink: true,
+        dateTime: "Dimanche 14h"
       },
       {
         title: "Défilé de Mode Vintage",
-        description: "Admirez les plus beaux looks vintage défilant sur scène.",
+        description: "Admirez les plus beaux looks vintage défilant sur scène. Participe au défilé de mode vintage du salon !  Inscris-toi dès maintenant via notre page officielle.  🎟️ Entrée gratuite pour les participants.  👗 Nous recherchons 2 modèles femmes et 2 modèles hommes – Pass week-end offert.",
         image: "/images/animations/danse/defile-mode.png",
         link: "#defile",
-        showMoreLink: false
+        showMoreLink: false,
+        dateTime: "Samedi 15h"      
       },
       {
         title: "Concours Miss & Mister Vintage 2025",
         description: "Élection de beauté avec jury de professionnels et couronnement officiel.",
         image: "/images/animations/danse/concours-vintage.png",
         link: "#concours",
-        showMoreLink: true
+        showMoreLink: false, 
       },
       {
         title: "Démo & Initiation de Claquettes",
@@ -70,7 +75,23 @@ const tabContents: TabContent[] = [
         image: "/images/animations/danse/claquettes.png",
         link: "#claquettes",
         showMoreLink: false
-      }
+      },
+      {
+        title: "Initiation au Lindy Hop",
+        description: "Découvre ce swing des années folles avec nos danseurs passionnés.",
+        image: "/images/animations/danse/lindyhop.png",
+        link: "#lindyhop",
+        showMoreLink: false,
+        dateTime: "Samedi 18h-19h"
+      },
+      {
+        title: "Bal Swing",
+        description: "Place à la danse ! Enfile ta plus belle tenue rétro et viens partager un moment festif sur les rythmes swing ! 🎷",
+        image: "/images/animations/danse/swing.png",
+        link: "#balswing",
+        showMoreLink: false,
+        dateTime: "Samedi 19h-21h"
+      },
     ]
   },
   {
@@ -83,14 +104,24 @@ const tabContents: TabContent[] = [
         description: "Retrouvez les sensations d'antan avec nos bornes d'arcade authentiques.",
         image: "/images/animations/jeux/arcade-retro.png",
         link: "#arcade",
-        showMoreLink: true
+        showMoreLink: false,
+        dateTime: "Tout le weekend"
       },
       {
         title: "Tournoi de baby foot",
-        description: "Formez votre équipe et défiez vos amis dans un tournoi de baby-foot plein d’énergie et de bonne humeur !",
+        description: " Forme ton équipe et rejoins le tournoi !  💸 Inscription : 10 € par équipe  🏆 L’équipe gagnante repart avec 50 € de prize money.  Les inscriptions sont ouvertes !",
         image: "/images/animations/jeux/babyfoot.png",
         link: "#activites",
-        showMoreLink: true
+        showMoreLink: false,
+        dateTime: "Samedi 16h"
+      },
+      {
+        title: "Concours de Hula Hoop",
+        description: "Viens défier tes amis dans une ambiance fun et décontractée ! 🎁 Cadeaux à gagner pour les finalistes. 👉 Battle Hula Hoop Top 8 : qui sera le grand gagnant ?",
+        image: "/images/animations/jeux/hulahoop.png",
+        link: "#hulahoop",
+        showMoreLink: false,
+        dateTime: "Samedi 14h"
       }
     ]
   },
@@ -104,21 +135,24 @@ const tabContents: TabContent[] = [
         description: "Offrez-vous un tatouage unique dans l'esprit vintage de l'événement.",
         image: "/images/animations/art/tatoo.png",
         link: "#tatouage",
-        showMoreLink: true
+        showMoreLink: false,
+        dateTime: "Tout le weekend"
       },
       {
         title: "Bijoux Vintage Réinventés",
         description: "Créations uniques à partir de boutons anciens et bijoux chinés, transformés en accessoires au charme rétro.",
         image: "/images/animations/art/bijoux-vintage.png",
         link: "#bijoux",
-        showMoreLink: false
+        showMoreLink: false,
+        dateTime: "Tout le weekend"
       },
       {
-        title: "Atelier Robotique pour les enfants",
-        description: "Découvrez comment construire, programmer (grâce à l'outil Scratch) et tester le bon fonctionnement d'une voiture intelligente.",
+        title: "Atelier Robotique",
+        description: "Plonge dans la peau d’un programmeur de jeux ! Découvre la programmation informatique à travers l’univers du rétrogaming. Atelier ludique et accessible à tous.",
         image: "/images/animations/art/robotique.png",
         link: "#enfants",
-        showMoreLink: true
+        showMoreLink: false,
+        dateTime: "Samedi 10h"
       }
     ]
   }
@@ -174,23 +208,35 @@ export default function AnimationsTabs() {
             tab.content.map((section, index) => (
               <div key={`${tab.id}-${index}`} className="card h-full flex flex-col">
                 {/* Image Section - Takes more than half the card */}
-                <div className="w-full h-64 rounded-lg overflow-hidden mb-4">
+                <div className="w-full h-64 rounded-lg overflow-hidden mb-4 relative">
                   <img 
                     src={section.image} 
                     alt={`${section.title} - Animation du Salon Vintage de Blavozy ${EVENT.date}`}
                     className="w-full h-full object-cover"
                   />
+                  {/* Date/Time Badge */}
+                  {section.dateTime && (
+                    <div className="absolute top-3 left-3 bg-black/80 text-white px-3 py-1.5 rounded text-xs font-semibold">
+                      {section.dateTime}
+                    </div>
+                  )}
                 </div>
                 
                 {/* Content Section */}
                 <div className="flex flex-col flex-grow">
-                  {/* Clickable Title */}
-                  <a 
-                    href={section.link}
-                    className="text-lg font-semibold text-brand hover:text-brand/80 underline mb-2 transition-colors"
-                  >
-                    {section.title}
-                  </a>
+                  {/* Title - Clickable only if showMoreLink is true */}
+                  {section.showMoreLink !== false ? (
+                    <a 
+                      href={section.link}
+                      className="text-lg font-semibold text-brand hover:text-brand/80 underline mb-2 transition-colors"
+                    >
+                      {section.title}
+                    </a>
+                  ) : (
+                    <h3 className="text-lg font-semibold text-brand mb-2">
+                      {section.title}
+                    </h3>
+                  )}
                   
                   {/* Description */}
                   <p className="text-gray-700 text-sm mb-4 flex-grow">
@@ -219,23 +265,35 @@ export default function AnimationsTabs() {
             ?.content.map((section, index) => (
               <div key={index} className="card h-full flex flex-col">
                 {/* Image Section - Takes more than half the card */}
-                <div className="w-full h-64 rounded-lg overflow-hidden mb-4">
+                <div className="w-full h-64 rounded-lg overflow-hidden mb-4 relative">
                   <img 
                     src={section.image} 
                     alt={`${section.title} - Animation du Salon Vintage de Blavozy ${EVENT.date}`}
                     className="w-full h-full object-cover"
                   />
+                  {/* Date/Time Badge */}
+                  {section.dateTime && (
+                    <div className="absolute top-3 left-3 bg-black/80 text-white px-3 py-1.5 rounded text-xs font-semibold">
+                      {section.dateTime}
+                    </div>
+                  )}
                 </div>
                 
                 {/* Content Section */}
                 <div className="flex flex-col flex-grow">
-                  {/* Clickable Title */}
-                  <a 
-                    href={section.link}
-                    className="text-lg font-semibold text-brand hover:text-brand/80 underline mb-2 transition-colors"
-                  >
-                    {section.title}
-                  </a>
+                  {/* Title - Clickable only if showMoreLink is true */}
+                  {section.showMoreLink !== false ? (
+                    <a 
+                      href={section.link}
+                      className="text-lg font-semibold text-brand hover:text-brand/80 underline mb-2 transition-colors"
+                    >
+                      {section.title}
+                    </a>
+                  ) : (
+                    <h3 className="text-lg font-semibold text-brand mb-2">
+                      {section.title}
+                    </h3>
+                  )}
                   
                   {/* Description */}
                   <p className="text-gray-700 text-sm mb-4 flex-grow">
