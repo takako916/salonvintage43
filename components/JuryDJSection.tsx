@@ -12,7 +12,7 @@ export default function JuryDJSection() {
     {
       name: "Léyon",
       role: "Jury",
-      imagePath: "/images/jury/leyon.jpeg?v=2",
+      imagePath: "/images/jury/Leyon.jpeg?v=2",
       placeholder: "👤"
     },
     {
