@@ -4,6 +4,7 @@ import Image from "next/image";
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
 import JuryDJSection from "../../components/JuryDJSection";
+import CollaborationSection from "../../components/CollaborationSection";
 import { EVENT } from "../data";
 
 export const metadata: Metadata = {
@@ -47,6 +48,9 @@ export default function BattleHipHop() {
         {/* Content Section */}
         <section className="py-16 bg-white">
           <div className="container mx-auto px-4 max-w-4xl">
+            {/* Collaboration Section */}
+            <CollaborationSection />
+
             <div className="card">
               <h2 className="text-3xl font-bold text-brand mb-6">
                 Le grand retour du RKD Battle !
