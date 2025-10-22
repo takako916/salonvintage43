@@ -208,19 +208,35 @@ export default function AnimationsTabs() {
             tab.content.map((section, index) => (
               <div key={`${tab.id}-${index}`} className="card h-full flex flex-col">
                 {/* Image Section - Takes more than half the card */}
-                <div className="w-full h-64 rounded-lg overflow-hidden mb-4 relative">
-                  <img 
-                    src={section.image} 
-                    alt={`${section.title} - Animation du Salon Vintage de Blavozy ${EVENT.date}`}
-                    className="w-full h-full object-cover"
-                  />
-                  {/* Date/Time Badge */}
-                  {section.dateTime && (
-                    <div className="absolute top-3 left-3 bg-black/80 text-white px-3 py-1.5 rounded text-xs font-semibold">
-                      {section.dateTime}
-                    </div>
-                  )}
-                </div>
+                {section.showMoreLink !== false ? (
+                  <a href={section.link} className="block w-full h-64 rounded-lg overflow-hidden mb-4 relative group">
+                    <img 
+                      src={section.image} 
+                      alt={`${section.title} - Animation du Salon Vintage de Blavozy ${EVENT.date}`}
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                    />
+                    {/* Date/Time Badge */}
+                    {section.dateTime && (
+                      <div className="absolute top-3 left-3 bg-black/80 text-white px-3 py-1.5 rounded text-xs font-semibold">
+                        {section.dateTime}
+                      </div>
+                    )}
+                  </a>
+                ) : (
+                  <div className="w-full h-64 rounded-lg overflow-hidden mb-4 relative">
+                    <img 
+                      src={section.image} 
+                      alt={`${section.title} - Animation du Salon Vintage de Blavozy ${EVENT.date}`}
+                      className="w-full h-full object-cover"
+                    />
+                    {/* Date/Time Badge */}
+                    {section.dateTime && (
+                      <div className="absolute top-3 left-3 bg-black/80 text-white px-3 py-1.5 rounded text-xs font-semibold">
+                        {section.dateTime}
+                      </div>
+                    )}
+                  </div>
+                )}
                 
                 {/* Content Section */}
                 <div className="flex flex-col flex-grow">
@@ -265,19 +281,35 @@ export default function AnimationsTabs() {
             ?.content.map((section, index) => (
               <div key={index} className="card h-full flex flex-col">
                 {/* Image Section - Takes more than half the card */}
-                <div className="w-full h-64 rounded-lg overflow-hidden mb-4 relative">
-                  <img 
-                    src={section.image} 
-                    alt={`${section.title} - Animation du Salon Vintage de Blavozy ${EVENT.date}`}
-                    className="w-full h-full object-cover"
-                  />
-                  {/* Date/Time Badge */}
-                  {section.dateTime && (
-                    <div className="absolute top-3 left-3 bg-black/80 text-white px-3 py-1.5 rounded text-xs font-semibold">
-                      {section.dateTime}
-                    </div>
-                  )}
-                </div>
+                {section.showMoreLink !== false ? (
+                  <a href={section.link} className="block w-full h-64 rounded-lg overflow-hidden mb-4 relative group">
+                    <img 
+                      src={section.image} 
+                      alt={`${section.title} - Animation du Salon Vintage de Blavozy ${EVENT.date}`}
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                    />
+                    {/* Date/Time Badge */}
+                    {section.dateTime && (
+                      <div className="absolute top-3 left-3 bg-black/80 text-white px-3 py-1.5 rounded text-xs font-semibold">
+                        {section.dateTime}
+                      </div>
+                    )}
+                  </a>
+                ) : (
+                  <div className="w-full h-64 rounded-lg overflow-hidden mb-4 relative">
+                    <img 
+                      src={section.image} 
+                      alt={`${section.title} - Animation du Salon Vintage de Blavozy ${EVENT.date}`}
+                      className="w-full h-full object-cover"
+                    />
+                    {/* Date/Time Badge */}
+                    {section.dateTime && (
+                      <div className="absolute top-3 left-3 bg-black/80 text-white px-3 py-1.5 rounded text-xs font-semibold">
+                        {section.dateTime}
+                      </div>
+                    )}
+                  </div>
+                )}
                 
                 {/* Content Section */}
                 <div className="flex flex-col flex-grow">

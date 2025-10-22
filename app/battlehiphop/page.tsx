@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Battle All Styles Old School | Vintage le Salon",
     description: "RKD Battle Rien Ke L'Debout - All Style Old School sur des sons Hip-Hop d'époque. Dimanche 14h à Blavozy.",
-    images: ["/images/animations/danse/battle-hiphop.png"],
+    images: ["/images/animations/danse/battleflyer.jpeg"],
   },
 };
 
@@ -25,7 +25,7 @@ export default function BattleHipHop() {
         {/* Hero Section */}
         <section className="relative h-[400px] bg-gray-900">
           <img 
-            src="/images/animations/danse/battle-hiphop.png"
+            src="/images/animations/danse/battleflyer.jpeg"
             alt="Battle All Styles Old School"
             className="w-full h-full object-cover opacity-80"
           />
@@ -82,8 +82,25 @@ export default function BattleHipHop() {
                     <li><strong>Format :</strong> 1 vs 1</li>
                     <li><strong>Style :</strong> All Style Old School sur musique Hip-Hop</li>
                     <li><strong>🏆 Prize money :</strong> 100 €</li>
-                    <li><strong>Spectateurs :</strong> Entrée gratuite</li>
                   </ul>
+                  
+                  <div className="text-center mt-6">
+                    <a
+                      href="https://www.facebook.com/events/1507911597125324"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-medium transition-colors"
+                    >
+                      <svg
+                        className="w-5 h-5"
+                        fill="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+                      </svg>
+                      <span>Événement Facebook</span>
+                    </a>
+                  </div>
                 </div>
 
                 <div className="bg-slate-50 p-6 rounded-lg mb-6">
