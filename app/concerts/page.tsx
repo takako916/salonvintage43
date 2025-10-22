@@ -59,6 +59,20 @@ export default function Concerts() {
                   Plongez dans une ambiance rétro garantie avec des reprises qui vous feront voyager dans le temps ! Un moment musical inoubliable pour bien démarrer le weekend vintage.
                 </p>
 
+                {/* Artist Photo */}
+                <div className="flex justify-center my-8">
+                  <div className="w-full max-w-md">
+                    <img 
+                      src="/images/artists/mahna.png"
+                      alt="MAH'NA - Artiste chanson française rétro"
+                      className="w-full h-auto rounded-lg shadow-lg object-cover"
+                    />
+                    <p className="text-center text-sm text-gray-600 mt-3 font-medium">
+                      MAH&rsquo;NA
+                    </p>
+                  </div>
+                </div>
+
                 <div className="bg-orange-50 p-6 rounded-lg mb-6">
                   <h3 className="text-xl font-semibold text-brand mb-4">
                     📅 Informations pratiques
@@ -69,7 +83,7 @@ export default function Concerts() {
                     <li><strong>Lieu :</strong> {EVENT.venue}, {EVENT.city}</li>
                     <li><strong>Artiste :</strong> MAH&rsquo;NA</li>
                     <li><strong>Répertoire :</strong> Chanson française années 60-80</li>
-                    <li><strong>Entrée :</strong> Gratuit</li>
+                
                   </ul>
                 </div>
 
