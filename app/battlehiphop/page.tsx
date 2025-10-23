@@ -82,7 +82,9 @@ export default function BattleHipHop() {
                     <li><strong>Lieu :</strong> {EVENT.venue}<br />
                         <span className="text-sm">8 Pl. Félix Tempère, 43700 Blavozy</span>
                     </li>
-                    <li><strong>Inscription :</strong> 5 € par danseur</li>
+                    <li><strong>Inscription :</strong> 5 € par danseur<br />
+                        <span className="text-sm">Pour vous inscrire, veuillez nous contacter par email à <a href="mailto:conventionvintage43@gmail.com" className="text-brand hover:underline">conventionvintage43@gmail.com</a></span>
+                    </li>
                     <li><strong>Format :</strong> 1 vs 1</li>
                     <li><strong>Style :</strong> All Style Old School sur musique Hip-Hop</li>
                     <li><strong>🏆 Prize money :</strong> 100 €</li>

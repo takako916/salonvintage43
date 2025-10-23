@@ -30,7 +30,7 @@ export default function ProgramList() {
               <div className="flex-1">
                 <p className="font-semibold text-ink mb-1">
                   <a href="/concerts" className="text-brand hover:text-brand/80 underline transition-colors">
-                    Concert MAH&rsquo;NA & son musicien
+                    Concert MAH&rsquo;NA & Vladimir
                   </a>
                 </p>
                 <p className="text-gray-700 text-sm mb-2">
@@ -61,7 +61,7 @@ export default function ProgramList() {
             <div className="flex gap-4">
               <div className="flex-shrink-0 w-24 font-semibold text-slate-700">10h00</div>
               <div className="flex-1">
-                <p className="font-semibold text-ink mb-1">Atelier Robotique : &ldquo;Plonge dans la peau d&rsquo;un programmeur de jeux !&rdquo;</p>
+                <p className="font-semibold text-ink mb-1">Atelier Code Gaming : &ldquo;Plonge dans la peau d&rsquo;un programmeur de jeux !&rdquo;</p>
                 <p className="text-gray-700 text-sm">
                   Découvre la programmation informatique à travers l&rsquo;univers du rétrogaming. Atelier ludique et accessible à tous.
                 </p>
