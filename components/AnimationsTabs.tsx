@@ -232,6 +232,23 @@ const tabContents: TabContent[] = [
             facebook: "https://www.facebook.com/lecoledunumerique43"
           }
         }
+      },
+      {
+        "title": "Univers photo vintage & boudoir",
+        "description": [
+          "Découvrez deux univers : vintage rétro et boudoir intime sexy.",
+          "Shooting photo sur place et développement instantané 13x15 pour 8€."
+        ],
+        "image": "/images/animations/art/elphoto.png",
+        "link": "/photoshooting",
+        "showMoreLink": false,
+        "dateTime": "Tout le weekend",
+        "collaboration": {
+          "name": "El photo",
+          "socials": {
+            "facebook": "https://www.facebook.com/p/El-photo-100066882163007/"
+          }
+        }
       }
     ]
   }
