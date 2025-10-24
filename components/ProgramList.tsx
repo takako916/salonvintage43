@@ -5,6 +5,33 @@ export default function ProgramList() {
         <h2 className="text-2xl font-bold text-ink mb-2">
           🕰️ PROGRAMME — VINTAGE LE SALON
         </h2>
+        
+        {/* PDF Download Section */}
+        <div className="mt-6">
+          <a
+            href="/programme.pdf"
+            download
+            className="inline-flex items-center gap-3 px-6 py-3 bg-brand text-white rounded-lg hover:bg-brand/90 transition-all duration-200 shadow-md hover:shadow-lg"
+          >
+            <svg
+              className="w-5 h-5"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+              />
+            </svg>
+            <span className="font-semibold">Télécharger le programme (PDF)</span>
+          </a>
+          <p className="text-sm text-gray-600 mt-2">
+            Téléchargez le programme complet imprimable
+          </p>
+        </div>
       </div>
 
       <div className="space-y-8">
