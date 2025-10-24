@@ -212,7 +212,14 @@ const tabContents: TabContent[] = [
         image: "/images/animations/art/bijoux-vintage.png",
         link: "/bijoux",
         showMoreLink: false,
-        dateTime: "Tout le weekend"
+        dateTime: "Tout le weekend",
+        collaboration: {
+          name: "CHIZOUKOU Bijoux Origami",
+          socials: {
+            instagram: "https://www.instagram.com/origamichizoukou",
+            facebook: "https://www.facebook.com/chizoukou"
+          }
+        }
       },
       {
         title: "Atelier Code Gaming",
