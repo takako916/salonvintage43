@@ -262,7 +262,23 @@ const tabContents: TabContent[] = [
             "facebook": "https://www.facebook.com/p/El-photo-100066882163007/"
           }
         }
-      }
+      },
+      {
+        "title": "Vinyles, jeux rétro et trésors geek à collectionner",
+        "description": [
+          "Des vinyles aux jeux vidéo, tout pour les vrais geeks vintage !"
+        ],
+        "image": "/images/animations/art/culturegeek.png",
+        "link": "/geek",
+        "showMoreLink": false,
+        "dateTime": "Tout le weekend",
+        "collaboration": {
+          "name": "Culture geek",
+          "socials": {
+            "facebook": "https://www.facebook.com/profile.php?id=100064169885580"
+          }
+        }
+      },
     ]
   }
 ];
