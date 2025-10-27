@@ -294,6 +294,22 @@ const tabContents: TabContent[] = [
           "website": "https://choubidouwhoua.fr/"
         }
       },
+      {
+        "title": "Créations uniques à partir de tissus anciens, revisitées avec style ♻️",
+        "description": [
+          "Donne une seconde vie aux tissus anciens ! Des accessoires upcyclés aux couleurs pop et vibes rétro, 100 % faits main ♻️✨"
+        ],
+        "image": "/images/animations/art/biboune.png",
+        "link": "/biboune",
+        "showMoreLink": false,
+        "dateTime": "Tout le weekend",
+        "collaboration": {
+          "name": "Façon Biboune",
+          "socials": {
+           instagram: "https://www.instagram.com/facon_biboune/"
+          }
+        }
+      }
     ]
   }
 ];
