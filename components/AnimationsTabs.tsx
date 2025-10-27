@@ -306,10 +306,24 @@ const tabContents: TabContent[] = [
         "collaboration": {
           "name": "Façon Biboune",
           "socials": {
-           instagram: "https://www.instagram.com/facon_biboune/"
+            "instagram": "https://www.instagram.com/facon_biboune/"
           }
         }
-      }
+      },
+      {
+        "title": "Peintures d'inspiration vintage",
+        "description": [
+          "L'art au naturel : œuvres originales et fresques murales à découvrir au Vintage le Salon."
+        ],
+        "image": "/images/animations/art/agnes.png",
+        "link": "/peintures",
+        "showMoreLink": false,
+        "dateTime": "Tout le weekend",
+        "collaboration": {
+          "name": "Agnès DESHORS - ATELIER TERRE DE SIENNE",
+          "website": "https://atelier-terredesienne.fr/"
+        }
+      },
     ]
   }
 ];
