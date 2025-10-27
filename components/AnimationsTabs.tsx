@@ -202,7 +202,13 @@ const tabContents: TabContent[] = [
         image: "/images/animations/art/tatoo.png",
         link: "/tatouage",
         showMoreLink: false,
-        dateTime: "Tout le weekend"
+        dateTime: "Tout le weekend",
+        collaboration: {
+          name: "La Nébuleuse Cléa & SOV_TT",
+          socials: {
+            instagram: "https://www.instagram.com/_clea_ttt"
+          }
+        }
       },
       {
         title: "Bijoux Vintage Réinventés",
