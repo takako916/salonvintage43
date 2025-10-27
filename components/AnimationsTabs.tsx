@@ -279,6 +279,19 @@ const tabContents: TabContent[] = [
           }
         }
       },
+      {
+        "title": "Bijoux et accessoires rétro – rockabilly",
+        "description": [
+          "Des bijoux et accessoires rétro, inspirés du style rockabilly et pin’up, pour toutes celles et ceux qui aiment la touche vintage avec du caractère 🎀"
+        ],
+        "image": "/images/animations/art/choubidou.png",
+        "link": "/geek",
+        "showMoreLink": false,
+        "dateTime": "Tout le weekend",
+        "collaboration": {
+          "name": "Choubidou WHOUA Créations",
+        }
+      },
     ]
   }
 ];
