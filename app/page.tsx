@@ -86,6 +86,11 @@ export default function Home() {
                     <p className="text-gray-600 text-sm">8 Pl. Félix Tempère</p>
                     <p className="text-gray-600 text-sm">43700 Blavozy</p>
                   </div>
+                  <div>
+                    <span className="font-medium text-brand">Tarifs :</span>
+                    <p className="text-gray-700">3 € l&apos;entrée</p>
+                    <p className="text-gray-600 text-sm">Gratuit pour les moins de 12 ans</p>
+                  </div>
                 </div>
               </div>
 
