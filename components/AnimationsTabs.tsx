@@ -16,6 +16,7 @@ interface TabContent {
     dateTime?: string;
     collaboration?: {
       name: string;
+      website?: string;
       socials?: {
         instagram?: string;
         facebook?: string;
@@ -290,6 +291,7 @@ const tabContents: TabContent[] = [
         "dateTime": "Tout le weekend",
         "collaboration": {
           "name": "Choubidou WHOUA Créations",
+          "website": "https://choubidouwhoua.fr/"
         }
       },
     ]
@@ -408,7 +410,18 @@ export default function AnimationsTabs() {
                     <div className="mt-2 mb-4 pb-3 border-t border-gray-200 pt-3">
                       <p className="text-xs text-gray-500 mb-1">En collaboration avec</p>
                       <div className="flex items-center gap-2">
-                        <p className="text-sm font-semibold text-slate-700">{section.collaboration.name}</p>
+                        {section.collaboration.website ? (
+                          <a
+                            href={section.collaboration.website}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-sm font-semibold text-brand hover:text-brand/80 underline transition-colors"
+                          >
+                            {section.collaboration.name}
+                          </a>
+                        ) : (
+                          <p className="text-sm font-semibold text-slate-700">{section.collaboration.name}</p>
+                        )}
                         {section.collaboration.socials && (
                           <div className="flex gap-2">
                             {section.collaboration.socials.instagram && (
@@ -540,7 +553,18 @@ export default function AnimationsTabs() {
                     <div className="mt-2 mb-4 pb-3 border-t border-gray-200 pt-3">
                       <p className="text-xs text-gray-500 mb-1">En collaboration avec</p>
                       <div className="flex items-center gap-2">
-                        <p className="text-sm font-semibold text-slate-700">{section.collaboration.name}</p>
+                        {section.collaboration.website ? (
+                          <a
+                            href={section.collaboration.website}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-sm font-semibold text-brand hover:text-brand/80 underline transition-colors"
+                          >
+                            {section.collaboration.name}
+                          </a>
+                        ) : (
+                          <p className="text-sm font-semibold text-slate-700">{section.collaboration.name}</p>
+                        )}
                         {section.collaboration.socials && (
                           <div className="flex gap-2">
                             {section.collaboration.socials.instagram && (
