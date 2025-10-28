@@ -96,6 +96,20 @@ export default function ProgramList() {
             </div>
 
             <div className="flex gap-4">
+              <div className="flex-shrink-0 w-24 font-semibold text-slate-700">13h00 – 18h00</div>
+              <div className="flex-1">
+                <p className="font-semibold text-ink mb-1">
+                  <a href="/claquettes" className="text-brand hover:text-brand/80 underline transition-colors">
+                    Ateliers de claquettes avec Metal tap
+                  </a>
+                </p>
+                <p className="text-gray-700 text-sm">
+                  Une journée complète d&rsquo;ateliers pour tous les niveaux : découverte, jeunes, et cours avancés. Inscription obligatoire. 👟
+                </p>
+              </div>
+            </div>
+
+            <div className="flex gap-4">
               <div className="flex-shrink-0 w-24 font-semibold text-slate-700">14h00</div>
               <div className="flex-1">
                 <p className="font-semibold text-ink mb-1">Concours de Hula Hoop</p>

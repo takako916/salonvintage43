@@ -108,11 +108,16 @@ const tabContents: TabContent[] = [
         showMoreLink: false, 
       },
       {
-        title: "Démo & Initiation de Claquettes",
-        description: "Assistez à une démonstration de claquettes et essayez quelques pas vous-même dans une ambiance conviviale.",
+        title: "Ateliers de Claquettes",
+        description: [
+          "Journée d'ateliers pour tous les niveaux avec Metal tap : découverte, jeunes, et cours avancés.",
+          "📝 Inscription obligatoire - Places limitées.",
+          "👉 Consultez le programme détaillé et les tarifs ci-dessous."
+        ],
         image: "/images/animations/danse/claquettes.png",
         link: "/claquettes",
-        showMoreLink: false,
+        showMoreLink: true,
+        dateTime: "Samedi 13h-18h",
         collaboration: {
           name: "Metal tap",
           socials: {
