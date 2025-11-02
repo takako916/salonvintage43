@@ -46,7 +46,7 @@ export default function Home() {
                   <h3 className="font-medium mb-2">🎵 Au programme :</h3>
                   <ul className="space-y-2 text-base">
                     <li>🛍️ <strong>Brocante haute-loire</strong> & vide-grenier avec exposants spécialisés</li>
-                    <li>🎸 <strong>Concerts rock</strong> & animations musicales</li>
+                    <li>🎸 <strong>Concerts</strong> & animations musicales</li>
                     <li>💉 Tatouage & blind test spécial années 80</li>
                     <li>🕺 <strong>Battle de danse hip-hop</strong> Old School</li>
                     <li>👗 Défilé & concours Miss & Mister Vintage 2025</li>
@@ -178,7 +178,7 @@ export default function Home() {
                   Le <strong>Salon du Vintage Haute-Loire</strong> à Blavozy prépare sa 1ère édition les 14, 15 et 16 novembre 2025. Ce <strong>salon vintage le puy en velay</strong> et cette <strong>brocante haute-loire</strong> vous attendent 🎉
                 </p>
                 <p>
-                  À seulement quelques minutes du <strong>Puy-en-Velay</strong>, cet <strong>événement familial</strong> fera voyager le public dans les années 60 à 80 : <strong>concerts rock</strong>, <strong>battle de danse hip-hop</strong> old school, défilé, blind test, tatouage, restauration, <strong>déco rétro</strong>, <strong>vide-grenier haute-loire</strong>, etc.
+                  À seulement quelques minutes du <strong>Puy-en-Velay</strong>, cet <strong>événement familial</strong> fera voyager le public dans les années 60 à 80 : <strong>concerts</strong>, <strong>battle de danse hip-hop</strong> old school, défilé, blind test, tatouage, restauration, <strong>déco rétro</strong>, <strong>vide-grenier haute-loire</strong>, etc.
                 </p>
                 <p>
                   Une ambiance conviviale et familiale vous attend, idéale pour petits et grands 👨‍👩‍👧‍👦
