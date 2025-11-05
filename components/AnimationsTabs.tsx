@@ -171,14 +171,14 @@ const tabContents: TabContent[] = [
     title: "Jeux & Activités",
     icon: "🎮",
     content: [
-      {
-        title: "Bornes d'Arcade Rétro",
-        description: "Retrouvez les sensations d'antan avec nos bornes d'arcade authentiques.",
-        image: "/images/animations/jeux/arcade-retro.png",
-        link: "/arcade",
-        showMoreLink: false,
-        dateTime: "Tout le weekend"
-      },
+      // {
+      //   title: "Bornes d'Arcade Rétro",
+      //   description: "Retrouvez les sensations d'antan avec nos bornes d'arcade authentiques.",
+      //   image: "/images/animations/jeux/arcade-retro.png",
+      //   link: "/arcade",
+      //   showMoreLink: false,
+      //   dateTime: "Tout le weekend"
+      // },
       {
         title: "Tournoi de baby foot",
         description: [
