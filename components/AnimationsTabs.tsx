@@ -251,25 +251,25 @@ const tabContents: TabContent[] = [
           }
         }
       },
-      {
-        title: "Atelier Code Gaming",
-        description: [
-          "Plonge dans la peau d'un programmeur de jeux !",
-          "Découvre la programmation informatique à travers l'univers du rétrogaming.",
-          "Atelier ludique et accessible à tous."
-        ],
-        image: "/images/animations/art/robotique.png",
-        link: "/robotique",
-        showMoreLink: false,
-        dateTime: "Samedi 10h",
-        collaboration: {
-          name: "Campus26",
-          socials: {
-            instagram: "https://www.instagram.com/ecole_du_numerique_43/",
-            facebook: "https://www.facebook.com/lecoledunumerique43"
-          }
-        }
-      },
+      // {
+      //   title: "Atelier Code Gaming",
+      //   description: [
+      //     "Plonge dans la peau d'un programmeur de jeux !",
+      //     "Découvre la programmation informatique à travers l'univers du rétrogaming.",
+      //     "Atelier ludique et accessible à tous."
+      //   ],
+      //   image: "/images/animations/art/robotique.png",
+      //   link: "/robotique",
+      //   showMoreLink: false,
+      //   dateTime: "Samedi 10h",
+      //   collaboration: {
+      //     name: "Campus26",
+      //     socials: {
+      //       instagram: "https://www.instagram.com/ecole_du_numerique_43/",
+      //       facebook: "https://www.facebook.com/lecoledunumerique43"
+      //     }
+      //   }
+      // },
       {
         "title": "Univers photo vintage & boudoir",
         "description": [
