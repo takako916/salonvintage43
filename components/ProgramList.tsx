@@ -85,7 +85,7 @@ export default function ProgramList() {
           </h3>
           
           <div className="space-y-6">
-            <div className="flex gap-4">
+            {/* <div className="flex gap-4">
               <div className="flex-shrink-0 w-24 font-semibold text-slate-700">10h00</div>
               <div className="flex-1">
                 <p className="font-semibold text-ink mb-1">Atelier Code Gaming : &ldquo;Plonge dans la peau d&rsquo;un programmeur de jeux !&rdquo;</p>
@@ -93,7 +93,7 @@ export default function ProgramList() {
                   Découvre la programmation informatique à travers l&rsquo;univers du rétrogaming. Atelier ludique et accessible à tous.
                 </p>
               </div>
-            </div>
+            </div> */}
 
             <div className="flex gap-4">
               <div className="flex-shrink-0 w-24 font-semibold text-slate-700">13h00 – 18h00</div>
