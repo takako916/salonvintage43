@@ -288,20 +288,20 @@ const tabContents: TabContent[] = [
         }
       },
       {
-        "title": "Vinyles, jeux rétro et trésors geek à collectionner",
+        "title": "Univers Pop & Geek à collectionner",
         "description": [
-          "Des vinyles aux jeux vidéo, tout pour les vrais geeks vintage !"
+          "Affiches, plaques et objets décoratifs inspirés de la culture pop et de l’univers geek."
         ],
         "image": "/images/animations/art/culturegeek.png",
         "link": "/geek",
         "showMoreLink": false,
-        "dateTime": "Tout le weekend",
-        "collaboration": {
-          "name": "Culture geek",
-          "socials": {
-            "facebook": "https://www.facebook.com/profile.php?id=100064169885580"
-          }
-        }
+        "dateTime": "Tout le weekend"
+        // "collaboration": {
+        //   "name": "Culture geek",
+        //   "socials": {
+        //     "facebook": "https://www.facebook.com/profile.php?id=100064169885580"
+        //   }
+        // }
       },
       {
         "title": "Bijoux et accessoires rétro – rockabilly",
