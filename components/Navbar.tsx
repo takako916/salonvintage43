@@ -2,17 +2,19 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { EVENT } from "../app/data";
+import { useBasePath, useEvent } from "./EventProviders";
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const basePath = useBasePath();
+  const event = useEvent();
 
   const navItems = [
-    { href: "/#animations", label: "ANIMATIONS & EXPOSANTS" },
-    { href: "/#info", label: "INFOS PRATIQUES" },
-    { href: "/#program", label: "PROGRAMME" },
-    { href: "/#exhibitors", label: "APPEL AUX EXPOSANTS" },
-    { href: "/#contact", label: "CONTACT" },
+    { href: `${basePath || "/"}#animations`, label: "ANIMATIONS & EXPOSANTS" },
+    { href: `${basePath || "/"}#info`, label: "INFOS PRATIQUES" },
+    { href: `${basePath || "/"}#program`, label: "PROGRAMME" },
+    { href: `${basePath || "/"}#exhibitors`, label: "APPEL AUX EXPOSANTS", highlight: true },
+    { href: `${basePath || "/"}#contact`, label: "CONTACT" },
   ];
 
   return (
@@ -20,31 +22,42 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo/Event Name */}
-          <Link href="/" className="flex items-center text-xl font-bold text-slate-700 hover:text-slate-900 transition-colors font-oswald font-medium">
+          <Link href={basePath || "/"} className="flex items-center text-xl font-bold text-slate-700 hover:text-slate-900 transition-colors font-oswald font-medium">
             <img 
-              src="/salonlevintagelogo.png" 
+              src={event.logo ?? "/salonlevintagelogo.png"} 
               alt="Salon Vintage Logo" 
               className="h-10 w-auto mr-3"
             />
             <span style={{ fontFamily: 'var(--font-oswald), sans-serif' }}>
-              {EVENT.nameParts.prefix}
+              {event.nameParts.prefix}
               <span className="text-orange-500">Vintage le Salon</span>
-              <span className="text-slate-700"> à Blavozy</span>
+              <span className="text-slate-700"> à {event.cityShort ?? event.city}</span>
             </span>
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex space-x-8">
-            {navItems.map((item) => (
-              <a
-                key={item.href}
-                href={item.href}
-                className="text-slate-700 hover:text-slate-500 hover:border-b-2 hover:border-slate-400 transition-all duration-200 font-medium pb-1 font-oswald font-light tracking-wide"
-                style={{ fontFamily: 'var(--font-oswald), sans-serif' }}
-              >
-                {item.label}
-              </a>
-            ))}
+          <div className="hidden md:flex items-center space-x-8">
+            {navItems.map((item) =>
+              "highlight" in item && item.highlight ? (
+                <a
+                  key={item.label}
+                  href={item.href}
+                  className="nav-exhibitors-cta font-oswald tracking-wide"
+                  style={{ fontFamily: 'var(--font-oswald), sans-serif' }}
+                >
+                  {item.label}
+                </a>
+              ) : (
+                <a
+                  key={item.label}
+                  href={item.href}
+                  className="text-slate-700 hover:text-slate-500 hover:border-b-2 hover:border-slate-400 transition-all duration-200 font-medium pb-1 font-oswald font-light tracking-wide"
+                  style={{ fontFamily: 'var(--font-oswald), sans-serif' }}
+                >
+                  {item.label}
+                </a>
+              )
+            )}
           </div>
 
           {/* Mobile menu button */}
@@ -84,17 +97,29 @@ export default function Navbar() {
         {isMenuOpen && (
           <div className="md:hidden py-4 border-t border-orange-200">
             <div className="flex flex-col space-y-4">
-              {navItems.map((item) => (
-                <a
-                  key={item.href}
-                  href={item.href}
-                  className="text-slate-700 hover:text-slate-500 hover:border-b-2 hover:border-slate-400 transition-all duration-200 font-medium pb-1 font-oswald font-light tracking-wide"
-                  onClick={() => setIsMenuOpen(false)}
-                  style={{ fontFamily: 'var(--font-oswald), sans-serif' }}
-                >
-                  {item.label}
-                </a>
-              ))}
+              {navItems.map((item) =>
+                "highlight" in item && item.highlight ? (
+                  <a
+                    key={item.label}
+                    href={item.href}
+                    className="nav-exhibitors-cta font-oswald tracking-wide text-center py-2.5"
+                    style={{ fontFamily: 'var(--font-oswald), sans-serif' }}
+                    onClick={() => setIsMenuOpen(false)}
+                  >
+                    {item.label}
+                  </a>
+                ) : (
+                  <a
+                    key={item.label}
+                    href={item.href}
+                    className="text-slate-700 hover:text-slate-500 hover:border-b-2 hover:border-slate-400 transition-all duration-200 font-medium pb-1 font-oswald font-light tracking-wide"
+                    onClick={() => setIsMenuOpen(false)}
+                    style={{ fontFamily: 'var(--font-oswald), sans-serif' }}
+                  >
+                    {item.label}
+                  </a>
+                )
+              )}
             </div>
           </div>
         )}

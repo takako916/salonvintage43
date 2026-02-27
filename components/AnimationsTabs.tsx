@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { EVENT } from "../app/data";
+import { useBasePath, useEvent } from "./EventProviders";
 
 interface TabContent {
   id: string;
@@ -414,6 +414,8 @@ const renderCollaboration = (collab: { name: string; website?: string; socials?:
 
 export default function AnimationsTabs() {
   const [activeTab, setActiveTab] = useState("tout");
+  const basePath = useBasePath();
+  const event = useEvent();
 
   return (
     <div className="w-full">
@@ -463,10 +465,10 @@ export default function AnimationsTabs() {
               <div key={`${tab.id}-${index}`} className="card h-full flex flex-col">
                 {/* Image Section - Takes more than half the card */}
                 {section.showMoreLink !== false ? (
-                  <a href={section.link} className="block w-full h-64 rounded-lg overflow-hidden mb-4 relative group">
+                  <a href={`${basePath}${section.link}`} className="block w-full h-64 rounded-lg overflow-hidden mb-4 relative group">
                     <img 
                       src={section.image} 
-                      alt={`${section.title} - Animation du Salon Vintage de Blavozy ${EVENT.date}`}
+                      alt={`${section.title} - Animation du Salon Vintage de Blavozy ${event.date}`}
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                     />
                     {/* Date/Time Badge */}
@@ -480,7 +482,7 @@ export default function AnimationsTabs() {
                   <div className="w-full h-64 rounded-lg overflow-hidden mb-4 relative">
                     <img 
                       src={section.image} 
-                      alt={`${section.title} - Animation du Salon Vintage de Blavozy ${EVENT.date}`}
+                      alt={`${section.title} - Animation du Salon Vintage de Blavozy ${event.date}`}
                       className="w-full h-full object-cover"
                     />
                     {/* Date/Time Badge */}
@@ -497,7 +499,7 @@ export default function AnimationsTabs() {
                   {/* Title - Clickable only if showMoreLink is true */}
                   {section.showMoreLink !== false ? (
                     <a 
-                      href={section.link}
+                      href={`${basePath}${section.link}`}
                       className="text-lg font-semibold text-brand hover:text-brand/80 underline mb-2 transition-colors"
                     >
                       {section.title}
@@ -540,7 +542,7 @@ export default function AnimationsTabs() {
                   {section.showMoreLink !== false && (
                     <div className="mt-auto">
                       <a 
-                        href={section.link}
+                        href={`${basePath}${section.link}`}
                         className="text-red-600 hover:text-red-800 text-sm font-medium transition-colors"
                       >
                         en savoir + →
@@ -559,10 +561,10 @@ export default function AnimationsTabs() {
               <div key={index} className="card h-full flex flex-col">
                 {/* Image Section - Takes more than half the card */}
                 {section.showMoreLink !== false ? (
-                  <a href={section.link} className="block w-full h-64 rounded-lg overflow-hidden mb-4 relative group">
+                  <a href={`${basePath}${section.link}`} className="block w-full h-64 rounded-lg overflow-hidden mb-4 relative group">
                     <img 
                       src={section.image} 
-                      alt={`${section.title} - Animation du Salon Vintage de Blavozy ${EVENT.date}`}
+                      alt={`${section.title} - Animation du Salon Vintage de Blavozy ${event.date}`}
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                     />
                     {/* Date/Time Badge */}
@@ -576,7 +578,7 @@ export default function AnimationsTabs() {
                   <div className="w-full h-64 rounded-lg overflow-hidden mb-4 relative">
                     <img 
                       src={section.image} 
-                      alt={`${section.title} - Animation du Salon Vintage de Blavozy ${EVENT.date}`}
+                      alt={`${section.title} - Animation du Salon Vintage de Blavozy ${event.date}`}
                       className="w-full h-full object-cover"
                     />
                     {/* Date/Time Badge */}
@@ -593,7 +595,7 @@ export default function AnimationsTabs() {
                   {/* Title - Clickable only if showMoreLink is true */}
                   {section.showMoreLink !== false ? (
                     <a 
-                      href={section.link}
+                      href={`${basePath}${section.link}`}
                       className="text-lg font-semibold text-brand hover:text-brand/80 underline mb-2 transition-colors"
                     >
                       {section.title}
@@ -636,7 +638,7 @@ export default function AnimationsTabs() {
                   {section.showMoreLink !== false && (
                     <div className="mt-auto">
                       <a 
-                        href={section.link}
+                        href={`${basePath}${section.link}`}
                         className="text-red-600 hover:text-red-800 text-sm font-medium transition-colors"
                       >
                         en savoir + →

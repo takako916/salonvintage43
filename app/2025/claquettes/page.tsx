@@ -1,8 +1,8 @@
 import { Metadata } from "next";
 import Link from "next/link";
-import Navbar from "../../components/Navbar";
-import Footer from "../../components/Footer";
-import { EVENT } from "../data";
+import Navbar from "../../../components/Navbar";
+import Footer from "../../../components/Footer";
+import { EVENT_ARCHIVE_2025 as EVENT } from "../../dataArchive2025";
 
 export const metadata: Metadata = {
   title: "Démo & Initiation de Claquettes",
@@ -20,7 +20,6 @@ export default function Claquettes() {
       <Navbar />
       
       <main id="main" className="pt-20">
-        {/* Hero Section */}
         <section className="relative h-[400px] bg-gray-900">
           <img 
             src="/images/animations/danse/metaltap.png"
@@ -42,7 +41,6 @@ export default function Claquettes() {
           </div>
         </section>
 
-        {/* Content Section */}
         <section className="py-16 bg-white">
           <div className="container mx-auto px-4 max-w-4xl">
             <div className="card">
@@ -172,7 +170,6 @@ export default function Claquettes() {
                   </p>
                 </div>
 
-                {/* Social Media Links */}
                 <div className="bg-white p-6 rounded-lg mb-6 border border-gray-200">
                   <h3 className="text-lg font-semibold text-brand mb-3">
                     En collaboration avec Metal tap
@@ -197,7 +194,7 @@ export default function Claquettes() {
 
                 <div className="text-center mt-8">
                   <Link
-                    href="/#animations"
+                    href="/2025#animations"
                     className="btn-primary inline-flex items-center gap-2"
                   >
                     <svg
@@ -226,4 +223,3 @@ export default function Claquettes() {
     </div>
   );
 }
-

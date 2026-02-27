@@ -49,9 +49,9 @@ export const metadata: Metadata = {
     canonical: "/",
   },
   icons: {
-    icon: "/salonlevintagelogo.png",
-    shortcut: "/salonlevintagelogo.png",
-    apple: "/salonlevintagelogo.png",
+    icon: EVENT.logo,
+    shortcut: EVENT.logo,
+    apple: EVENT.logo,
   },
   openGraph: {
     title: EVENT.name,
@@ -158,11 +158,11 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
         />
       </head>
-      <body className={`antialiased ${bebasNeue.variable} ${oswald.variable}`}>
+      <body className={`antialiased ${bebasNeue?.variable ?? ""} ${oswald?.variable ?? ""} min-h-screen bg-paper text-ink`}>
         <a href="#main" className="skip-link">
           Aller au contenu principal
         </a>
-        {children}
+        <div className="min-h-screen">{children}</div>
       </body>
     </html>
   );

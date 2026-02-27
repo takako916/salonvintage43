@@ -1,15 +1,19 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
-import { EVENT } from "../app/data";
+import { useEvent } from "./EventProviders";
 
 export default function PosterCard() {
+  const event = useEvent();
+
   return (
     <div className="card max-w-md mx-auto">
       <div className="text-center">
         <div className="mb-6">
           <Image
-            src={EVENT.downloadPoster}
-            alt={`Affiche de ${EVENT.name}`}
+            src={event.downloadPoster}
+            alt={`Affiche de ${event.name}`}
             width={300}
             height={400}
             className="rounded-lg shadow-md mx-auto"
@@ -26,8 +30,8 @@ export default function PosterCard() {
         </p>
         
         <Link
-          href={EVENT.downloadPoster}
-          download={`${EVENT.name}-affiche.jpg`}
+          href={event.downloadPoster}
+          download={`${event.name}-affiche.jpg`}
           className="btn-primary inline-flex items-center gap-2"
         >
           <svg

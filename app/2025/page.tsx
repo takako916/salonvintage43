@@ -1,13 +1,13 @@
-import Navbar from "../components/Navbar";
-import Hero from "../components/Hero";
-import Section from "../components/Section";
-import ProgramList from "../components/ProgramList";
-import PosterCard from "../components/PosterCard";
-import Footer from "../components/Footer";
-import AnimationsTabs from "../components/AnimationsTabs";
-import { EVENT } from "./data";
+import Navbar from "../../components/Navbar";
+import Hero from "../../components/Hero";
+import Section from "../../components/Section";
+import ProgramList from "../../components/ProgramList";
+import PosterCard from "../../components/PosterCard";
+import Footer from "../../components/Footer";
+import AnimationsTabs from "../../components/AnimationsTabs";
+import { EVENT_ARCHIVE_2025 as EVENT } from "../dataArchive2025";
 
-export default function Home() {
+export default function Home2025() {
   return (
     <div className="min-h-screen">
       <Navbar />
@@ -188,7 +188,7 @@ export default function Home() {
                 </p>
                 <div className="mt-6">
                   <a
-                    href="#contact"
+                    href="/2025#contact"
                     className="inline-flex items-center gap-2 text-slate-600 hover:text-slate-800 transition-colors font-medium"
                   >
                     <span>Contactez-nous pour plus d&apos;informations</span>

@@ -1,15 +1,21 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
-import { EVENT } from "../app/data";
+import { useBasePath, useEvent } from "./EventProviders";
 
 export default function Hero() {
+  const basePath = useBasePath();
+  const event = useEvent();
+  const prefix = basePath || "/";
+
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="/images/banner.jpg"
-          alt={`Salon Vintage de Blavozy - ${EVENT.date} à ${EVENT.city}. Événement culturel avec animations, exposants, concerts et jeux rétro des années 60-80.`}
+          src={event.heroImage ?? "/images/banner.jpg"}
+          alt={`Salon Vintage de Blavozy - ${event.date} à ${event.city}. Événement culturel avec animations, exposants, concerts et jeux rétro des années 60-80.`}
           fill
           className="object-cover"
           priority
@@ -26,7 +32,7 @@ export default function Hero() {
           {/* Event Badge */}
           <div className="mb-6">
             <span className="inline-block bg-brand/90 text-white px-4 py-2 rounded-full text-sm font-medium font-oswald" style={{ fontFamily: 'var(--font-oswald), sans-serif' }}>
-              À 10 min du Puy-en-Velay
+              {event.nearbyLabel ?? "À 10 min du Puy-en-Velay"}
             </span>
             <p className="text-lg sm:text-xl text-gray-200 mt-2 flex items-center justify-center gap-2 font-oswald" style={{ fontFamily: 'var(--font-oswald), sans-serif' }}>
               Organisé par Production Directe
@@ -44,28 +50,28 @@ export default function Hero() {
             style={{ fontFamily: 'var(--font-bebas-neue), sans-serif' }}
           >
             <div className="block">
-              {EVENT.nameParts.prefix}
+              {event.nameParts.prefix}
               <span className="text-orange-400">Vintage le Salon</span>
             </div>
             <div className="block text-white">
-              À Blavozy
+              À {event.cityShort ?? event.city}
             </div>
           </h1>
 
           {/* Event Date */}
           <p className="text-xl sm:text-2xl mb-2 font-medium text-white drop-shadow-md font-oswald" style={{ fontFamily: 'var(--font-oswald), sans-serif' }}>
-            {EVENT.date}
+            {event.date}
           </p>
 
           {/* Event Location */}
           <p className="text-lg sm:text-xl mb-8 text-gray-100 drop-shadow-md font-oswald" style={{ fontFamily: 'var(--font-oswald), sans-serif' }}>
-            {EVENT.city}
+            {event.city}
           </p>
 
           {/* Navigation Buttons */}
           <div className="flex flex-wrap justify-center items-center gap-4">
           <Link
-            href="#animations"
+            href={`${prefix}#animations`}
             className="bg-gradient-to-r from-purple-500 to-purple-600 hover:from-purple-600 hover:to-purple-700 text-white px-6 py-3 rounded-2xl font-medium transition-all duration-200 shadow-lg hover:shadow-xl inline-flex items-center gap-2"
           >
             <span>🎭</span>
@@ -73,7 +79,7 @@ export default function Hero() {
           </Link>
           
           <Link
-            href="#info"
+            href={`${prefix}#info`}
             className="bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white px-6 py-3 rounded-2xl font-medium transition-all duration-200 shadow-lg hover:shadow-xl inline-flex items-center gap-2"
           >
             <span>ℹ️</span>
@@ -81,7 +87,7 @@ export default function Hero() {
           </Link>
           
           <Link
-            href="#program"
+            href={`${prefix}#program`}
             className="bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white px-6 py-3 rounded-2xl font-medium transition-all duration-200 shadow-lg hover:shadow-xl inline-flex items-center gap-2"
           >
             <span>📅</span>
@@ -89,7 +95,7 @@ export default function Hero() {
           </Link>
           
           <Link
-            href="#contact"
+            href={`${prefix}#contact`}
             className="bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white px-6 py-3 rounded-2xl font-medium transition-all duration-200 shadow-lg hover:shadow-xl inline-flex items-center gap-2"
           >
             <span>📧</span>

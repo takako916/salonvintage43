@@ -1,8 +1,8 @@
 import { Metadata } from "next";
 import Link from "next/link";
-import Navbar from "../../components/Navbar";
-import Footer from "../../components/Footer";
-import { EVENT } from "../data";
+import Navbar from "../../../components/Navbar";
+import Footer from "../../../components/Footer";
+import { EVENT_ARCHIVE_2025 as EVENT } from "../../dataArchive2025";
 
 export const metadata: Metadata = {
   title: "Concerts Live",
@@ -72,7 +72,7 @@ export default function Concerts() {
                     </p>
                     
                     {/* Social Media Links */}
-                    <div className="flex justify-center gap-4 mt-4">
+                <div className="flex justify-center gap-4 mt-4">
                       <a
                         href="https://www.instagram.com/mahnamusic/"
                         target="_blank"
@@ -149,7 +149,7 @@ export default function Concerts() {
 
                 <div className="text-center mt-8">
                   <Link
-                    href="/#animations"
+                    href="/2025#animations"
                     className="btn-primary inline-flex items-center gap-2"
                   >
                     <svg
@@ -178,4 +178,3 @@ export default function Concerts() {
     </div>
   );
 }
-

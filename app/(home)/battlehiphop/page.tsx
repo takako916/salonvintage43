@@ -1,11 +1,11 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
-import Navbar from "../../components/Navbar";
-import Footer from "../../components/Footer";
-import JuryDJSection from "../../components/JuryDJSection";
-import CollaborationSection from "../../components/CollaborationSection";
-import { EVENT } from "../data";
+import Navbar from "../../../components/Navbar";
+import Footer from "../../../components/Footer";
+import JuryDJSection from "../../../components/JuryDJSection";
+import CollaborationSection from "../../../components/CollaborationSection";
+import { EVENT } from "../../data";
 
 export const metadata: Metadata = {
   title: "Battle All Styles Old School",

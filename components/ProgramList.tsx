@@ -1,4 +1,10 @@
+"use client";
+
+import { useBasePath } from "./EventProviders";
+
 export default function ProgramList() {
+  const basePath = useBasePath();
+
   return (
     <div className="max-w-5xl mx-auto">
       <div className="text-center mb-8">
@@ -56,7 +62,7 @@ export default function ProgramList() {
               <div className="flex-shrink-0 w-24 font-semibold text-slate-700">19h30 – 21h45</div>
               <div className="flex-1">
                 <p className="font-semibold text-ink mb-1">
-                  <a href="/concerts" className="text-brand hover:text-brand/80 underline transition-colors">
+                  <a href={`${basePath}/concerts`} className="text-brand hover:text-brand/80 underline transition-colors">
                     Concert MAH&rsquo;NA & Vladimir
                   </a>
                 </p>
@@ -99,7 +105,7 @@ export default function ProgramList() {
               <div className="flex-shrink-0 w-24 font-semibold text-slate-700">13h00 – 18h00</div>
               <div className="flex-1">
                 <p className="font-semibold text-ink mb-1">
-                  <a href="/claquettes" className="text-brand hover:text-brand/80 underline transition-colors">
+                  <a href={`${basePath}/claquettes`} className="text-brand hover:text-brand/80 underline transition-colors">
                     Ateliers de claquettes avec Metal tap
                   </a>
                 </p>
@@ -210,7 +216,7 @@ export default function ProgramList() {
               <div className="flex-shrink-0 w-24 font-semibold text-slate-700">14h00</div>
               <div className="flex-1">
                 <p className="font-semibold text-ink mb-1">
-                  <a href="/battlehiphop" className="text-brand hover:text-brand/80 underline transition-colors">
+                  <a href={`${basePath}/battlehiphop`} className="text-brand hover:text-brand/80 underline transition-colors">
                     Battle RKD – All Style Old School
                   </a>
                 </p>
