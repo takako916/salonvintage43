@@ -40,33 +40,33 @@ export default function Home() {
         <Section id="exhibitors" title="APPEL AUX EXPOSANTS" className="bg-slate-50">
           <div className="max-w-4xl mx-auto space-y-8">
             <div className="card text-center">
-              <h3 className="text-xl font-semibold text-ink mb-6">
-                Rejoignez-nous !
-              </h3>
-              <div className="text-gray-700 leading-relaxed space-y-4 text-left">
+              <h3 className="text-xl font-semibold text-ink mb-6">Rejoignez-nous !</h3>
+              <div className="text-gray-700 leading-relaxed space-y-5 text-left">
                 <p>
-                  La <strong>2e édition du Salon du Vintage Haute-Loire</strong> se tiendra à <strong>Brives-Charensac</strong> les <strong>31 octobre et 1er novembre 2026</strong>, à la <strong>Maison Pour Tous - Centre Social de Brives-Charensac</strong>. Ce <strong>salon vintage à 5 min du Puy-en-Velay</strong> et cette <strong>brocante haute-loire</strong> vous attendent 🎉
+                  La <strong className="text-ink">2e édition du Salon du Vintage Haute-Loire</strong> se tiendra à <strong className="text-ink">Brives-Charensac</strong>, les <strong className="text-ink">31 octobre et 1er novembre 2026</strong>, à la <strong className="text-ink">Maison Pour Tous – Centre Social de Brives-Charensac</strong>, à seulement <strong className="text-brand">5 minutes du Puy-en-Velay</strong>.
                 </p>
                 <p>
-                  À seulement quelques minutes du <strong>Puy-en-Velay</strong>, cet <strong>événement familial</strong> fera voyager le public dans les années 60 à 80 : <strong>concerts</strong>, <strong>battle de danse hip-hop</strong> old school, défilé, blind test, tatouage, restauration, <strong>déco rétro</strong>, <strong>vide-grenier haute-loire</strong>, etc.
+                  Pendant deux jours, ce <strong className="text-ink">grand rendez-vous vintage en Haute-Loire</strong> plongera les visiteurs dans l&apos;univers des <strong className="text-brand">années 60 à 80</strong> :<br />
+                  <span className="text-slate-800"><strong>concerts</strong>, <strong>battle de danse hip-hop old school</strong>, défilé, blind test, tatouage, restauration, <strong>déco rétro</strong> et espace <strong>vide-grenier</strong>.</span>
                 </p>
                 <p>
-                  Une ambiance conviviale et familiale vous attend, idéale pour petits et grands 👨‍👩‍👧‍👦
+                  Pensé comme un <strong className="text-ink">événement familial et convivial</strong>, le salon accueille petits et grands dans une <strong className="text-brand">ambiance chaleureuse et festive</strong>.
                 </p>
-                <p className="text-brand font-medium">
-                  Rejoignez-nous en tant qu&apos;exposant — nous accueillons les passionnés de vinyles 🎶, affiches & posters 🎨, vêtements vintage 👗, <strong>objets rétro & déco</strong> 🕰️, et bien plus encore.
+                <p>
+                  <strong className="text-ink">Nous lançons notre appel aux exposants</strong> :<br />
+                  passionnés de <strong>vinyles</strong>, <strong>affiches et posters</strong>, <strong>vêtements vintage</strong>, <strong>objets rétro et décoration</strong>… vous êtes les bienvenus pour faire vivre cette <strong className="text-brand">brocante vintage en Haute-Loire</strong> aux côtés d&apos;un public enthousiaste.
                 </p>
-                <div className="mt-6">
+                <p className="pt-2">
                   <a
                     href="#contact"
-                    className="inline-flex items-center gap-2 text-slate-600 hover:text-slate-800 transition-colors font-medium"
+                    className="inline-flex items-center gap-2 text-brand font-semibold hover:text-orange-600 transition-colors"
                   >
-                    <span>Contactez-nous pour plus d&apos;informations</span>
-                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <span>👉 Contactez-nous pour recevoir les informations et le dossier d&apos;inscription.</span>
+                    <svg className="w-4 h-4 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                     </svg>
                   </a>
-                </div>
+                </p>
               </div>
             </div>
             <div className="flex justify-center items-center">
