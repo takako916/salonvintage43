@@ -15,12 +15,14 @@ const oswald = Oswald({
   variable: "--font-oswald",
 });
 
+const baseDescription = `Salon du Vintage Haute-Loire - Brocante et vide-grenier familial à ${EVENT.cityShort} près du Puy-en-Velay. ${EVENT.date} à ${EVENT.venue}. Concerts rock, battle de danse hip-hop, déco rétro, brocante 43, vide grenier haute-loire et animations pour toute la famille.`;
+
 export const metadata: Metadata = {
   title: {
     default: EVENT.name,
     template: `%s | ${EVENT.name}`,
   },
-  description: `Salon du Vintage Haute-Loire - Brocante et vide-grenier familial à Blavozy près du Puy-en-Velay. ${EVENT.date} au Centre socio-culturel de Blavozy. Concerts rock, battle de danse hip-hop, déco rétro, brocante 43, vide grenier haute-loire et animations pour toute la famille.`,
+  description: baseDescription,
   keywords: [
     "brocante 43", "vide grenier 43", "brocante haute-loire", "vide grenier haute-loire",
     "salon vintage le puy en velay", "salon du vintage haute-loire", "brocante haute-loire", 
@@ -55,7 +57,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: EVENT.name,
-    description: `Salon du Vintage Haute-Loire - Brocante et vide-grenier familial à Blavozy près du Puy-en-Velay. ${EVENT.date} au Centre socio-culturel de Blavozy. Concerts rock, battle de danse hip-hop, déco rétro, brocante 43, vide grenier haute-loire et animations pour toute la famille.`,
+    description: baseDescription,
     url: "https://salonvintage43.vercel.app",
     siteName: EVENT.name,
     images: [
@@ -72,7 +74,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: EVENT.name,
-    description: `Salon du Vintage Haute-Loire - Brocante et vide-grenier familial à Blavozy près du Puy-en-Velay. ${EVENT.date} au Centre socio-culturel de Blavozy. Concerts rock, battle de danse hip-hop, déco rétro, brocante 43, vide grenier haute-loire et animations pour toute la famille.`,
+    description: baseDescription,
     images: ["/images/banner.jpg"],
     creator: "@productiondirecte",
   },
@@ -101,18 +103,18 @@ export default function RootLayout({
     "@context": "https://schema.org",
     "@type": "Event",
     "name": EVENT.name,
-    "description": `Salon du Vintage Haute-Loire - Brocante et vide-grenier familial à Blavozy près du Puy-en-Velay. ${EVENT.date} au Centre socio-culturel de Blavozy. Concerts rock, battle de danse hip-hop, déco rétro, brocante 43, vide grenier haute-loire et animations pour toute la famille.`,
-    "startDate": "2025-11-14T18:00:00+01:00",
-    "endDate": "2025-11-16T18:00:00+01:00",
+    "description": baseDescription,
+    "startDate": "2026-10-31T10:00:00+01:00",
+    "endDate": "2026-11-01T18:00:00+01:00",
     "eventStatus": "https://schema.org/EventScheduled",
     "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
     "location": {
       "@type": "Place",
-      "name": "Centre socio-culturel de Blavozy",
+      "name": EVENT.venue,
       "address": {
         "@type": "PostalAddress",
-        "streetAddress": "Centre socio-culturel",
-        "addressLocality": "Blavozy",
+        "streetAddress": EVENT.venue,
+        "addressLocality": EVENT.cityShort,
         "postalCode": "43700",
         "addressRegion": "Haute-Loire",
         "addressCountry": "FR"
@@ -132,7 +134,7 @@ export default function RootLayout({
       "price": "0",
       "priceCurrency": "EUR",
       "availability": "https://schema.org/InStock",
-      "validFrom": "2025-01-01"
+      "validFrom": "2026-01-01"
     },
     "keywords": "brocante 43, vide grenier 43, brocante haute-loire, vide grenier haute-loire, salon vintage le puy en velay, salon du vintage haute-loire, événement familial, déco rétro, concerts rock, battle de danse hip-hop",
     "url": "https://salonvintage43.vercel.app"
