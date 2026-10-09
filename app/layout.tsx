@@ -46,7 +46,7 @@ export const metadata: Metadata = {
     address: false,
     telephone: false,
   },
-  metadataBase: new URL("https://salonvintage43.vercel.app"),
+  metadataBase: new URL("https://vintage.production-directe.com"),
   alternates: {
     canonical: "/",
   },
@@ -58,7 +58,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: EVENT.name,
     description: baseDescription,
-    url: "https://salonvintage43.vercel.app",
+    url: "https://vintage.production-directe.com",
     siteName: EVENT.name,
     images: [
       {
@@ -137,7 +137,7 @@ export default function RootLayout({
       "validFrom": "2026-01-01"
     },
     "keywords": "brocante 43, vide grenier 43, brocante haute-loire, vide grenier haute-loire, salon vintage le puy en velay, salon du vintage haute-loire, événement familial, déco rétro, concerts rock, battle de danse hip-hop",
-    "url": "https://salonvintage43.vercel.app"
+    "url": "https://vintage.production-directe.com"
   };
 
   return (

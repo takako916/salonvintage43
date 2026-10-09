@@ -7,7 +7,7 @@ export default function robots(): MetadataRoute.Robots {
       allow: '/',
       disallow: [],
     },
-    sitemap: 'https://salonvintage43.vercel.app/sitemap.xml',
+    sitemap: 'https://vintage.production-directe.com/sitemap.xml',
   }
 }
 
