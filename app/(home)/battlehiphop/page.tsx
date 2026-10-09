@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Battle All Styles Old School | Vintage le Salon",
     description: "RKD Battle Rien Ke L'Debout - All Style Old School sur des sons Hip-Hop d'époque. Dimanche 14h à Blavozy.",
-    images: ["/images/animations/danse/battleflyer.jpeg"],
+    images: ["/images/2025/animations/danse/battleflyer.jpeg"],
   },
 };
 
@@ -26,7 +26,7 @@ export default function BattleHipHop() {
         {/* Hero Section */}
         <section className="relative h-[400px] bg-gray-900">
           <img 
-            src="/images/animations/danse/battleflyer.jpeg"
+            src="/images/2025/animations/danse/battleflyer.jpeg"
             alt="Battle All Styles Old School"
             className="w-full h-full object-cover opacity-80"
           />

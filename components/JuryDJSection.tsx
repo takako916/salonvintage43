@@ -16,7 +16,7 @@ export default function JuryDJSection() {
     {
       name: "Léyon",
       role: "Jury",
-      imagePath: "/images/jury/Leyon.jpeg?v=2",
+      imagePath: "/images/2025/jury/Leyon.jpeg?v=2",
       placeholder: "👤",
       instagram: {
         username: "@leo.paul_m",
@@ -26,7 +26,7 @@ export default function JuryDJSection() {
     {
       name: "Lego",
       role: "Jury",
-      imagePath: "/images/jury/Adilo.jpeg?v=2",
+      imagePath: "/images/2025/jury/Adilo.jpeg?v=2",
       placeholder: "👤",
       instagram: {
         username: "@lego_adilo",
@@ -38,7 +38,7 @@ export default function JuryDJSection() {
   const dj: Person = {
     name: "Honesty",
     role: "DJ Hip-Hop",
-    imagePath: "/images/dj/honesty.png",
+    imagePath: "/images/2025/dj/honesty.png",
     placeholder: "🎧",
     instagram: {
       username: "@honesty.by.nature",

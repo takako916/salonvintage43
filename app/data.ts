@@ -41,7 +41,7 @@ export const EVENT = {
   /** Court pour Hero / Navbar (ex. « À Blavozy », « À Brives-Charensac ») */
   cityShort: "Brives-Charensac",
   venue: "Maison Pour Tous - Centre Social de Brives-Charensac",
-  mapUrl: "https://www.google.com/maps/place//data=!4m2!3m1!1s0x47f5f07e3b450c95:0x2366aa8b6eed2b92",
+  mapUrl: "https://www.google.com/maps/search/?api=1&query=1+Route+de+Coubon+43700+Brives-Charensac",
   /** Badge Hero (ex. « À 10 min du Puy-en-Velay », « 5 min du Puy-en-Velay ») */
   nearbyLabel: "5 min du Puy-en-Velay",
   contactEmail: "conventionvintage43@gmail.com",
@@ -49,7 +49,7 @@ export const EVENT = {
   programIntro: "Années 60–80：concerts, battle de danse, défilé, blind test, tatouage, restauration, jeux rétro, etc.",
   program: [] as ProgramItem[],
   exhibitorNote: "ファミリー向けの温かい雰囲気。ヴィンテージ／ブロカント／モードレトロ／レコード／フード等歓迎。",
-  downloadPoster: "/images/poster.jpg",
+  downloadPoster: "/images/2025/poster.jpg",
   facebookEvent: "https://fb.me/e/efozMBrJO",
   /** Instagram du salon (édition courante) */
   instagram: "https://www.instagram.com/vintagelesalon43",

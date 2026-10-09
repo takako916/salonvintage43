@@ -2,7 +2,9 @@ import Navbar from "../../components/Navbar";
 import Hero from "../../components/Hero";
 import Section from "../../components/Section";
 import Footer from "../../components/Footer";
+import AnimationsTabs from "../../components/AnimationsTabs";
 import { EVENT } from "../data";
+import { ANIMATIONS_2026 } from "../animations2026";
 
 export default function Home() {
   return (
@@ -12,19 +14,109 @@ export default function Home() {
       <main id="main">
         <Hero />
         
-        {/* Animations Section — Prochainement */}
+        {/* Animations Section */}
         <Section id="animations" title="ANIMATIONS & EXPOSANTS" className="bg-orange-50">
-          <div className="max-w-2xl mx-auto text-center py-12">
-            <p className="text-2xl font-semibold text-brand">Prochainement</p>
-            <p className="text-gray-600 mt-2">Cette section sera bientôt disponible.</p>
+          <div className="max-w-6xl mx-auto">
+            <div className="text-center mb-8">
+              <h2 className="text-2xl font-semibold text-ink mb-4">
+                🎭 Animations & Spectacles 🛍️
+              </h2>
+              <p className="text-lg text-brand font-medium">
+                Un programme riche en animations et exposants pour tous les âges !
+              </p>
+            </div>
+            <AnimationsTabs tabs={ANIMATIONS_2026} />
           </div>
         </Section>
         
-        {/* Informations Section — Prochainement */}
+        {/* Informations Section */}
         <Section id="info" title="INFOS PRATIQUES" className="bg-slate-50">
-          <div className="max-w-2xl mx-auto text-center py-12">
-            <p className="text-2xl font-semibold text-brand">Prochainement</p>
-            <p className="text-gray-600 mt-2">Cette section sera bientôt disponible.</p>
+          <div className="max-w-4xl mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div className="card">
+                <h3 className="text-xl font-semibold text-ink mb-4">
+                  Date et lieu
+                </h3>
+                <div className="space-y-3">
+                  <div>
+                    <span className="font-medium text-brand">Date :</span>
+                    <p className="text-gray-700">31 octobre et 1 novembre 2026</p>
+                  </div>
+                  <div>
+                    <span className="font-medium text-brand">Horaires :</span>
+                    <ul className="text-gray-700 text-sm space-y-1 mt-1">
+                      <li>• Samedi : 10h – 22h</li>
+                      <li>• Dimanche : 10h – 18h</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <span className="font-medium text-brand">Lieu :</span>
+                    <p className="text-gray-700">Maison Pour Tous Brives</p>
+                    <p className="text-gray-600 text-sm">1 Route de Coubon</p>
+                    <p className="text-gray-600 text-sm">43700 Brives-Charensac</p>
+                  </div>
+                  <div>
+                    <span className="font-medium text-brand">Entrée :</span>
+                    <p className="text-gray-700">3 € (1 journée) / 5 € (Pass Week-end)</p>
+                    <p className="text-gray-600 text-sm">Gratuit -12 ans</p>
+                  </div>
+                  <div>
+                    <span className="font-medium text-brand">Restauration :</span>
+                    <p className="text-gray-700">Sur place</p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="card">
+                <h3 className="text-xl font-semibold text-ink mb-4">
+                  Accès
+                </h3>
+                <div className="space-y-4 text-left">
+                  <div>
+                    <h4 className="font-semibold text-gray-800 mb-2">🚗 En voiture :</h4>
+                    <ul className="space-y-1 text-gray-700">
+                      <li><strong>Depuis Le Puy-en-Velay</strong> : environ 5 minutes</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-gray-800 mb-2">📍 Sur place :</h4>
+                    <ul className="space-y-1 text-gray-700">
+                      <li>Maison Pour Tous Brives</li>
+                      <li>1 Route de Coubon, 43700 Brives-Charensac</li>
+                    </ul>
+                  </div>
+                  <div className="pt-4">
+                    <a
+                      href={EVENT.mapUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="btn-secondary-gray inline-flex items-center gap-2"
+                    >
+                      <svg
+                        className="w-4 h-4"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={2}
+                          d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+                        />
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={2}
+                          d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+                        />
+                      </svg>
+                      <span>Voir sur Google Maps</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </Section>
 

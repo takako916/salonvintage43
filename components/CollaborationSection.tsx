@@ -19,7 +19,7 @@ export default function CollaborationSection() {
         <div className="flex items-center gap-4">
           <div className="w-20 h-20 bg-white rounded-full overflow-hidden shadow-md flex items-center justify-center">
             <img 
-              src="/images/partners/septieme-precepte-logo.jpg"
+              src="/images/2025/partners/septieme-precepte-logo.jpg"
               alt="Septième Précepte Logo"
               className="w-full h-full object-cover"
               onError={handleImageError}

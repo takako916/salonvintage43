@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Démo & Initiation de Claquettes | Vintage le Salon",
     description: "Assistez à une démonstration de claquettes et essayez quelques pas vous-même dans une ambiance conviviale. En collaboration avec Metal tap.",
-    images: ["/images/animations/danse/claquettes.png"],
+    images: ["/images/2025/animations/danse/claquettes.png"],
   },
 };
 
@@ -23,7 +23,7 @@ export default function Claquettes() {
         {/* Hero Section */}
         <section className="relative h-[400px] bg-gray-900">
           <img 
-            src="/images/animations/danse/metaltap.png"
+            src="/images/2025/animations/danse/metaltap.png"
             alt="Démo & Initiation de Claquettes - avec Isabelle Roux de Metal tap"
             className="w-full h-full object-cover opacity-80"
           />

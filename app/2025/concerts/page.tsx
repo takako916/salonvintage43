@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Concerts Live | Vintage le Salon",
     description: "MAH'NA revisite avec passion les plus grands classiques de la chanson française des années 60 à 80. Vendredi 19h30-21h45 à Blavozy.",
-    images: ["/images/animations/musique/concerts-live.png"],
+    images: ["/images/2025/animations/musique/concerts-live.png"],
   },
 };
 
@@ -23,7 +23,7 @@ export default function Concerts() {
         {/* Hero Section */}
         <section className="relative h-[400px] bg-gray-900">
           <img 
-            src="/images/animations/musique/concerts-live.png"
+            src="/images/2025/animations/musique/concerts-live.png"
             alt="Concerts Live - MAH'NA"
             className="w-full h-full object-cover opacity-80"
           />
@@ -63,7 +63,7 @@ export default function Concerts() {
                 <div className="flex justify-center my-8">
                   <div className="w-full max-w-md">
                     <img 
-                      src="/images/artists/mahnaetvladimir.jpg"
+                      src="/images/2025/artists/mahnaetvladimir.jpg"
                       alt="MAH'NA - Artiste chanson française rétro"
                       className="w-full h-auto rounded-lg shadow-lg object-cover"
                     />

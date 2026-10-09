@@ -62,7 +62,7 @@ export const metadata: Metadata = {
     siteName: EVENT.name,
     images: [
       {
-        url: "/images/banner.jpg",
+        url: "/images/2025/banner.jpg",
         width: 1200,
         height: 630,
         alt: `${EVENT.name} - ${EVENT.date} à ${EVENT.city}`,
@@ -75,7 +75,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: EVENT.name,
     description: baseDescription,
-    images: ["/images/banner.jpg"],
+    images: ["/images/2025/banner.jpg"],
     creator: "@productiondirecte",
   },
   robots: {

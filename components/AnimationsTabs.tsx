@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { useBasePath, useEvent } from "./EventProviders";
 
-interface TabContent {
+export interface TabContent {
   id: string;
   title: string;
   icon: string;
@@ -11,9 +11,9 @@ interface TabContent {
     title: string;
     description: string | string[];
     image: string;
-    link: string;
+    link?: string;
     showMoreLink?: boolean;
-    dateTime?: string;
+    dateTime?: string | string[];
     collaboration?: {
       name: string;
       website?: string;
@@ -35,7 +35,7 @@ interface TabContent {
   }[];
 }
 
-const tabContents: TabContent[] = [
+const defaultTabContents: TabContent[] = [
   {
     id: "musique",
     title: "Musique & Concerts",
@@ -47,7 +47,7 @@ const tabContents: TabContent[] = [
           "MAH'NA revisite avec passion les plus grands classiques de la chanson française des années 60 à 80.",
           "Ambiance rétro garantie ! 🎶"
         ],
-        image: "/images/animations/musique/concerts-live.png",
+        image: "/images/2025/animations/musique/concerts-live.png",
         link: "/concerts",
         showMoreLink: true,
         dateTime: "Vendredi 19h30-21h45",
@@ -66,7 +66,7 @@ const tabContents: TabContent[] = [
           "Teste tes connaissances musicales et amuse-toi entre amis !",
           "Cadeaux à la clé ! 🎧"
         ],
-        image: "/images/animations/musique/blind-test.png",
+        image: "/images/2025/animations/musique/blind-test.png",
         link: "/blindtest",
         showMoreLink: false,
         dateTime: "Dimanche 13h"
@@ -85,7 +85,7 @@ const tabContents: TabContent[] = [
           "Un concept revisité autour du All Style Old School, sur des sons Hip-Hop d'époque.",
           "🕺 Danseurs, sortez vos plus belles tenues Old School et montrez votre style !"
         ],
-        image: "/images/animations/danse/battle-hiphop.png",
+        image: "/images/2025/animations/danse/battle-hiphop.png",
         link: "/battlehiphop",
         showMoreLink: true,
         dateTime: "Dimanche 14h",
@@ -104,7 +104,7 @@ const tabContents: TabContent[] = [
           "🎟️ Entrée gratuite pour les participants.",
           "👗 Nous recherchons 2 modèles femmes et 2 modèles hommes – Pass week-end offert."
         ],
-        image: "/images/animations/danse/defile-mode.png",
+        image: "/images/2025/animations/danse/defile-mode.png",
         link: "/defile",
         showMoreLink: false,
         dateTime: "Samedi 15h"      
@@ -112,7 +112,7 @@ const tabContents: TabContent[] = [
       {
         title: "Concours Miss & Mister Vintage 2025",
         description: "Élection de beauté avec jury de professionnels et couronnement officiel.",
-        image: "/images/animations/danse/concours-vintage.png",
+        image: "/images/2025/animations/danse/concours-vintage.png",
         link: "/concours",
         showMoreLink: false, 
       },
@@ -123,7 +123,7 @@ const tabContents: TabContent[] = [
           "📝 Inscription obligatoire - Places limitées.",
           "👉 Consultez le programme détaillé et les tarifs ci-dessous."
         ],
-        image: "/images/animations/danse/claquettes.png",
+        image: "/images/2025/animations/danse/claquettes.png",
         link: "/claquettes",
         showMoreLink: true,
         dateTime: "Samedi 13h-18h",
@@ -137,7 +137,7 @@ const tabContents: TabContent[] = [
       {
         title: "Initiation au Lindy Hop",
         description: "Découvre ce swing des années folles avec nos danseurs passionnés.",
-        image: "/images/animations/danse/lindyhop.png",
+        image: "/images/2025/animations/danse/lindyhop.png",
         link: "/lindyhop",
         showMoreLink: false,
         dateTime: "Samedi 18h-19h",
@@ -153,7 +153,7 @@ const tabContents: TabContent[] = [
         description: [
           "Place à la danse ! Enfile ta plus belle tenue rétro et viens partager un moment festif sur les rythmes swing ! 🎷"
         ],
-        image: "/images/animations/danse/swing.png",
+        image: "/images/2025/animations/danse/swing.png",
         link: "/balswing",
         showMoreLink: false,
         dateTime: "Samedi 19h-21h",
@@ -174,7 +174,7 @@ const tabContents: TabContent[] = [
       // {
       //   title: "Bornes d'Arcade Rétro",
       //   description: "Retrouvez les sensations d'antan avec nos bornes d'arcade authentiques.",
-      //   image: "/images/animations/jeux/arcade-retro.png",
+      //   image: "/images/2025/animations/jeux/arcade-retro.png",
       //   link: "/arcade",
       //   showMoreLink: false,
       //   dateTime: "Tout le weekend"
@@ -187,7 +187,7 @@ const tabContents: TabContent[] = [
           "🏆 L'équipe gagnante repart avec 50 € de prize money.",
           "Les inscriptions sont ouvertes !"
         ],
-        image: "/images/animations/jeux/babyfoot.png",
+        image: "/images/2025/animations/jeux/babyfoot.png",
         link: "/babyfoot",
         showMoreLink: false,
         dateTime: "Samedi 16h"
@@ -199,7 +199,7 @@ const tabContents: TabContent[] = [
           "🎁 Cadeaux à gagner pour les finalistes.",
           "👉 Battle Hula Hoop Top 8 : qui sera le grand gagnant ?"
         ],
-        image: "/images/animations/jeux/hulahoop.png",
+        image: "/images/2025/animations/jeux/hulahoop.png",
         link: "/hulahoop",
         showMoreLink: false,
         dateTime: "Samedi 14h"
@@ -214,7 +214,7 @@ const tabContents: TabContent[] = [
       {
         title: "Tatouage",
         description: "Offrez-vous un tatouage unique dans l'esprit vintage de l'événement.",
-        image: "/images/animations/art/tatoo.png",
+        image: "/images/2025/animations/art/tatoo.png",
         link: "/tatouage",
         showMoreLink: false,
         dateTime: "Tout le weekend",
@@ -239,7 +239,7 @@ const tabContents: TabContent[] = [
         description: [
           "Créations uniques à partir de boutons anciens et bijoux chinés, transformés en accessoires au charme rétro."
         ],
-        image: "/images/animations/art/bijoux-vintage.png",
+        image: "/images/2025/animations/art/bijoux-vintage.png",
         link: "/bijoux",
         showMoreLink: false,
         dateTime: "Tout le weekend",
@@ -258,7 +258,7 @@ const tabContents: TabContent[] = [
       //     "Découvre la programmation informatique à travers l'univers du rétrogaming.",
       //     "Atelier ludique et accessible à tous."
       //   ],
-      //   image: "/images/animations/art/robotique.png",
+      //   image: "/images/2025/animations/art/robotique.png",
       //   link: "/robotique",
       //   showMoreLink: false,
       //   dateTime: "Samedi 10h",
@@ -276,7 +276,7 @@ const tabContents: TabContent[] = [
           "Découvrez deux univers : vintage rétro et boudoir intime sexy.",
           "Shooting photo sur place et développement instantané 13x15 pour 8€."
         ],
-        "image": "/images/animations/art/elphoto.png",
+        "image": "/images/2025/animations/art/elphoto.png",
         "link": "/photoshooting",
         "showMoreLink": false,
         "dateTime": "Tout le weekend",
@@ -292,7 +292,7 @@ const tabContents: TabContent[] = [
         "description": [
           "Affiches, plaques et objets décoratifs inspirés de la culture pop et de l’univers geek."
         ],
-        "image": "/images/animations/art/culturegeek.png",
+        "image": "/images/2025/animations/art/culturegeek.png",
         "link": "/geek",
         "showMoreLink": false,
         "dateTime": "Tout le weekend"
@@ -308,7 +308,7 @@ const tabContents: TabContent[] = [
         "description": [
           "Des bijoux et accessoires rétro, inspirés du style rockabilly et pin’up, pour toutes celles et ceux qui aiment la touche vintage avec du caractère 🎀"
         ],
-        "image": "/images/animations/art/choubidou.png",
+        "image": "/images/2025/animations/art/choubidou.png",
         "link": "/geek",
         "showMoreLink": false,
         "dateTime": "Tout le weekend",
@@ -322,7 +322,7 @@ const tabContents: TabContent[] = [
         "description": [
           "Donne une seconde vie aux tissus anciens ! Des accessoires upcyclés aux couleurs pop et vibes rétro, 100 % faits main ♻️✨"
         ],
-        "image": "/images/animations/art/biboune.png",
+        "image": "/images/2025/animations/art/biboune.png",
         "link": "/biboune",
         "showMoreLink": false,
         "dateTime": "Tout le weekend",
@@ -338,7 +338,7 @@ const tabContents: TabContent[] = [
         "description": [
           "L'art au naturel : œuvres originales et fresques murales à découvrir au Vintage le Salon."
         ],
-        "image": "/images/animations/art/agnes.png",
+        "image": "/images/2025/animations/art/agnes.png",
         "link": "/peintures",
         "showMoreLink": false,
         "dateTime": "Tout le weekend",
@@ -412,10 +412,30 @@ const renderCollaboration = (collab: { name: string; website?: string; socials?:
   </div>
 );
 
-export default function AnimationsTabs() {
+function DateTimeBadges({ dateTime }: { dateTime?: string | string[] }) {
+  const items = Array.isArray(dateTime) ? dateTime : dateTime ? [dateTime] : [];
+  if (items.length === 0) return null;
+
+  return (
+    <div className="absolute top-3 left-3 flex flex-col items-start gap-1.5">
+      {items.map((item) => (
+        <div key={item} className="bg-black/80 text-white px-3 py-1.5 rounded text-xs font-semibold">
+          {item}
+        </div>
+      ))}
+    </div>
+  );
+}
+
+export default function AnimationsTabs({ tabs }: { tabs?: TabContent[] } = {}) {
   const [activeTab, setActiveTab] = useState("tout");
   const basePath = useBasePath();
   const event = useEvent();
+  const categories = tabs ?? defaultTabContents;
+  const visibleCount =
+    activeTab === "tout"
+      ? categories.reduce((count, tab) => count + tab.content.length, 0)
+      : categories.find((tab) => tab.id === activeTab)?.content.length ?? 0;
 
   return (
     <div className="w-full">
@@ -436,7 +456,7 @@ export default function AnimationsTabs() {
         </button>
         
         {/* Other Tabs */}
-        {tabContents.map((tab) => (
+        {categories.map((tab) => (
           <button
             key={tab.id}
             onClick={() => setActiveTab(tab.id)}
@@ -457,10 +477,16 @@ export default function AnimationsTabs() {
       </div>
 
       {/* Tab Content */}
+      {visibleCount === 0 ? (
+        <div className="max-w-2xl mx-auto text-center py-12">
+          <p className="text-2xl font-semibold text-brand">Prochainement</p>
+          <p className="text-gray-600 mt-2">Les cartes de cette catégorie seront bientôt disponibles.</p>
+        </div>
+      ) : (
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {activeTab === "tout" ? (
           // Show all content from all tabs
-          tabContents.flatMap(tab => 
+          categories.flatMap(tab => 
             tab.content.map((section, index) => (
               <div key={`${tab.id}-${index}`} className="card h-full flex flex-col">
                 {/* Image Section - Takes more than half the card */}
@@ -468,29 +494,21 @@ export default function AnimationsTabs() {
                   <a href={`${basePath}${section.link}`} className="block w-full h-64 rounded-lg overflow-hidden mb-4 relative group">
                     <img 
                       src={section.image} 
-                      alt={`${section.title} - Animation du Salon Vintage de Blavozy ${event.date}`}
+                      alt={`${section.title} - Animation du Salon Vintage de ${event.cityShort} ${event.date}`}
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                     />
                     {/* Date/Time Badge */}
-                    {section.dateTime && (
-                      <div className="absolute top-3 left-3 bg-black/80 text-white px-3 py-1.5 rounded text-xs font-semibold">
-                        {section.dateTime}
-                      </div>
-                    )}
+                    <DateTimeBadges dateTime={section.dateTime} />
                   </a>
                 ) : (
                   <div className="w-full h-64 rounded-lg overflow-hidden mb-4 relative">
                     <img 
                       src={section.image} 
-                      alt={`${section.title} - Animation du Salon Vintage de Blavozy ${event.date}`}
+                      alt={`${section.title} - Animation du Salon Vintage de ${event.cityShort} ${event.date}`}
                       className="w-full h-full object-cover"
                     />
                     {/* Date/Time Badge */}
-                    {section.dateTime && (
-                      <div className="absolute top-3 left-3 bg-black/80 text-white px-3 py-1.5 rounded text-xs font-semibold">
-                        {section.dateTime}
-                      </div>
-                    )}
+                    <DateTimeBadges dateTime={section.dateTime} />
                   </div>
                 )}
                 
@@ -555,7 +573,7 @@ export default function AnimationsTabs() {
           )
         ) : (
           // Show content from selected tab
-          tabContents
+          categories
             .find((tab) => tab.id === activeTab)
             ?.content.map((section, index) => (
               <div key={index} className="card h-full flex flex-col">
@@ -564,29 +582,21 @@ export default function AnimationsTabs() {
                   <a href={`${basePath}${section.link}`} className="block w-full h-64 rounded-lg overflow-hidden mb-4 relative group">
                     <img 
                       src={section.image} 
-                      alt={`${section.title} - Animation du Salon Vintage de Blavozy ${event.date}`}
+                      alt={`${section.title} - Animation du Salon Vintage de ${event.cityShort} ${event.date}`}
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                     />
                     {/* Date/Time Badge */}
-                    {section.dateTime && (
-                      <div className="absolute top-3 left-3 bg-black/80 text-white px-3 py-1.5 rounded text-xs font-semibold">
-                        {section.dateTime}
-                      </div>
-                    )}
+                    <DateTimeBadges dateTime={section.dateTime} />
                   </a>
                 ) : (
                   <div className="w-full h-64 rounded-lg overflow-hidden mb-4 relative">
                     <img 
                       src={section.image} 
-                      alt={`${section.title} - Animation du Salon Vintage de Blavozy ${event.date}`}
+                      alt={`${section.title} - Animation du Salon Vintage de ${event.cityShort} ${event.date}`}
                       className="w-full h-full object-cover"
                     />
                     {/* Date/Time Badge */}
-                    {section.dateTime && (
-                      <div className="absolute top-3 left-3 bg-black/80 text-white px-3 py-1.5 rounded text-xs font-semibold">
-                        {section.dateTime}
-                      </div>
-                    )}
+                    <DateTimeBadges dateTime={section.dateTime} />
                   </div>
                 )}
                 
@@ -650,6 +660,7 @@ export default function AnimationsTabs() {
             ))
         )}
       </div>
+      )}
     </div>
   );
 }

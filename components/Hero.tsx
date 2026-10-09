@@ -14,7 +14,7 @@ export default function Hero() {
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <Image
-          src={event.heroImage ?? "/images/banner.jpg"}
+          src={event.heroImage ?? "/images/2025/banner.jpg"}
           alt={`Salon Vintage de Blavozy - ${event.date} à ${event.city}. Événement culturel avec animations, exposants, concerts et jeux rétro des années 60-80.`}
           fill
           className="object-cover"
