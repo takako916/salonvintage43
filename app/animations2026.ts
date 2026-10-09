@@ -39,7 +39,8 @@ export const ANIMATIONS_2026: TabContent[] = [
       {
         title: "Concours de Rubik’s Cube",
         description: [
-          "Découvrez une sélection d’objets de décoration de 1890 à 1980 pour donner du caractère à votre intérieur. Mélangez les époques et les styles, et laissez chaque objet raconter son histoire !",
+          "Testez votre rapidité lors d’un concours de Rubik’s Cube !",
+          "Venez relever le défi et tentez de remporter un prix !",
         ],
         image: "/images/2026/animations/jeux/rubikscube.png",
         showMoreLink: false,
