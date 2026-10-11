@@ -9,7 +9,7 @@ export interface TabContent {
   icon: string;
   content: {
     title: string;
-    description: string | string[];
+    description?: string | string[];
     image: string;
     link?: string;
     showMoreLink?: boolean;
@@ -531,16 +531,17 @@ export default function AnimationsTabs({ tabs }: { tabs?: TabContent[] } = {}) {
                     </h3>
                   )}
                   
-                  {/* Description */}
-                  <div className="text-gray-700 text-sm mb-4 space-y-2">
-                    {Array.isArray(section.description) ? (
-                      section.description.map((paragraph, idx) => (
-                        <p key={idx}>{paragraph}</p>
-                      ))
-                    ) : (
-                      <p>{section.description}</p>
-                    )}
-                  </div>
+                  {section.description && (
+                    <div className="text-gray-700 text-sm mb-4 space-y-2">
+                      {Array.isArray(section.description) ? (
+                        section.description.map((paragraph, idx) => (
+                          <p key={idx}>{paragraph}</p>
+                        ))
+                      ) : (
+                        <p>{section.description}</p>
+                      )}
+                    </div>
+                  )}
                   
                   {/* Collaboration */}
                   {(section.collaboration || (section.collaborations && section.collaborations.length > 0)) && (
@@ -619,16 +620,17 @@ export default function AnimationsTabs({ tabs }: { tabs?: TabContent[] } = {}) {
                     </h3>
                   )}
                   
-                  {/* Description */}
-                  <div className="text-gray-700 text-sm mb-4 space-y-2">
-                    {Array.isArray(section.description) ? (
-                      section.description.map((paragraph, idx) => (
-                        <p key={idx}>{paragraph}</p>
-                      ))
-                    ) : (
-                      <p>{section.description}</p>
-                    )}
-                  </div>
+                  {section.description && (
+                    <div className="text-gray-700 text-sm mb-4 space-y-2">
+                      {Array.isArray(section.description) ? (
+                        section.description.map((paragraph, idx) => (
+                          <p key={idx}>{paragraph}</p>
+                        ))
+                      ) : (
+                        <p>{section.description}</p>
+                      )}
+                    </div>
+                  )}
                   
                   {/* Collaboration */}
                   {(section.collaboration || (section.collaborations && section.collaborations.length > 0)) && (

@@ -71,6 +71,21 @@ export const ANIMATIONS_2026: TabContent[] = [
         },
       },
       {
+        title: "Cours d’initiation Lindy Hop – Association N’Swinge",
+        description: [
+          "Entrez dans la danse avec La Clandestine ! Samedi à 14h30, initiez-vous au rock sauté et au boogie-woogie, puis admirez la démonstration à 15h."
+        ],
+        image: "/images/2026/animations/danse/lindyhop.png",
+        showMoreLink: false,
+        dateTime: "Samedi 17h30- 20h",
+        collaboration: {
+          name: "Asso Nswing",
+          socials: {
+            facebook: "https://www.facebook.com/asso.nswing.9/",
+          },
+        },
+      },
+      {
         title: "Initiation & démonstration au rock sauté et au boogie-woogie – La Clandestine",
         description: [
           "Entrez dans la danse avec La Clandestine ! Samedi à 14h30, initiez-vous au rock sauté et au boogie-woogie, puis admirez la démonstration à 15h."
@@ -84,6 +99,19 @@ export const ANIMATIONS_2026: TabContent[] = [
             instagram: "https://www.instagram.com/asso_la_clandestine",
           },
         },
+      },
+      {
+        title: "Défilé de mode vintage x Emmaüs",
+        description: [
+          "Découvrez des looks rétro lors d’un défilé de mode vintage organisé en partenariat avec Emmaüs Haute-Loire. Après le défilé, retrouvez les vêtements portés par les modèles à la vente et repartez avec vos pièces préférées !",
+        ],
+        image: "/images/2026/animations/danse/defiledemode.png",
+        showMoreLink: false,
+        dateTime: "Samedi 13h30",
+        collaboration: {
+          name: "Emmaüs 43",
+          website: "https://emmaus43.fr/",
+       },
       },
       {
         title: "Battle RKD Hip-Hop All Styles Old School 1 vs 1 – Prize money : 100 € ",
@@ -167,6 +195,7 @@ export const ANIMATIONS_2026: TabContent[] = [
           name: "Matt Cosplay",
        },
       },
+      
     ],
   },
   {
@@ -189,16 +218,46 @@ export const ANIMATIONS_2026: TabContent[] = [
         },
       },
       {
-        title: "Défilé de mode vintage x Emmaüs",
+        title: "Tattoo - Black Pearl Tattoo",
         description: [
-          "Découvrez des looks rétro lors d’un défilé de mode vintage organisé en partenariat avec Emmaüs Haute-Loire. Après le défilé, retrouvez les vêtements portés par les modèles à la vente et repartez avec vos pièces préférées !",
+          "Envie d’un tatouage d’inspiration vintage ou d’un autre style ? Venez échanger avec Black Pearl Tattoo et partager vos idées pour un projet qui vous ressemble !",
         ],
-        image: "/images/2026/animations/art/defiledemode.png",
-        showMoreLink: false,
-        dateTime: "Samedi 13h30",
-        collaboration: {
-          name: "Emmaüs 43",
-          website: "https://emmaus43.fr/",
+        image: "/images/2026/animations/art/tattoo.png",
+        showMoreLink: false,        
+        collaboration: {  
+          name: "Black Pearl Tattoo",
+          website: "https://www.instagram.com/black.pearl.tattoo.piercing",
+       },
+      },
+      {
+        title: "Photo booth vintage",
+        description: [
+          "Venez dans votre plus belle tenue vintage et prenez la pose devant l’objectif de notre photographe ! Repartez avec un beau souvenir de votre voyage dans le temps.",
+        ],
+        image: "/images/2026/animations/art/photobooth.png",
+        showMoreLink: false,   
+        collaboration: {  
+          name: "Lise Plazanet",
+          website: "https://www.liseplazanetphotographie.fr/",
+       },
+      },
+      {
+        title: "Sac & valises en cuir au désign rétro",
+        image: "/images/2026/animations/art/sacretro.png",
+        showMoreLink: false,   
+        collaboration: {  
+          name: "Eauateur",
+       },
+      },
+      {
+        title: "Plaque métal vintage",
+        image: "/images/2026/animations/art/tofmobile.png",
+        showMoreLink: false,   
+        collaboration: {  
+          name: "Tofmobile",
+          socials: {
+          facebook: "https://www.facebook.com/Tofmobile73/",
+          },
        },
       },
     ],

@@ -65,7 +65,7 @@ export const PROGRAM_2026: ProgramDay[] = [
       {
         debut: "17:30",
         fin: "20:00",
-        contenu: "Cours d’initiation – Association N’Swing",
+        contenu: "Cours d’initiation Lindy Hop – Association N’Swing",
       },
       {
         debut: "20:00",
