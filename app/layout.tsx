@@ -51,9 +51,9 @@ export const metadata: Metadata = {
     canonical: "/",
   },
   icons: {
-    icon: EVENT.logo,
-    shortcut: EVENT.logo,
-    apple: EVENT.logo,
+    icon: "/favicon.png",
+    shortcut: "/favicon.png",
+    apple: "/favicon.png",
   },
   openGraph: {
     title: EVENT.name,

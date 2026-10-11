@@ -3,6 +3,8 @@ import Hero from "../../components/Hero";
 import Section from "../../components/Section";
 import Footer from "../../components/Footer";
 import AnimationsTabs from "../../components/AnimationsTabs";
+import ProgramList2026 from "../../components/ProgramList2026";
+import PosterCard from "../../components/PosterCard";
 import { EVENT } from "../data";
 import { ANIMATIONS_2026 } from "../animations2026";
 
@@ -31,7 +33,7 @@ export default function Home() {
         
         {/* Informations Section */}
         <Section id="info" title="INFOS PRATIQUES" className="bg-slate-50">
-          <div className="max-w-4xl mx-auto">
+          <div className="max-w-4xl mx-auto space-y-8">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div className="card">
                 <h3 className="text-xl font-semibold text-ink mb-4">
@@ -117,15 +119,16 @@ export default function Home() {
                 </div>
               </div>
             </div>
+
+            <div className="text-center">
+              <PosterCard />
+            </div>
           </div>
         </Section>
 
-        {/* Programme Section — Prochainement */}
+        {/* Programme Section */}
         <Section id="program" title="PROGRAMME" className="bg-orange-50">
-          <div className="max-w-2xl mx-auto text-center py-12">
-            <p className="text-2xl font-semibold text-brand">Prochainement</p>
-            <p className="text-gray-600 mt-2">Cette section sera bientôt disponible.</p>
-          </div>
+          <ProgramList2026 />
         </Section>
 
         {/* Exposants Section */}

@@ -49,7 +49,7 @@ export const EVENT = {
   programIntro: "Années 60–80：concerts, battle de danse, défilé, blind test, tatouage, restauration, jeux rétro, etc.",
   program: [] as ProgramItem[],
   exhibitorNote: "ファミリー向けの温かい雰囲気。ヴィンテージ／ブロカント／モードレトロ／レコード／フード等歓迎。",
-  downloadPoster: "/images/2025/poster.jpg",
+  downloadPoster: "/images/2026/affiche2026.png",
   facebookEvent: "https://fb.me/e/efozMBrJO",
   /** Instagram du salon (édition courante) */
   instagram: "https://www.instagram.com/vintagelesalon43",

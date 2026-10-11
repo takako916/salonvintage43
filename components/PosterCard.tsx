@@ -6,6 +6,7 @@ import { useEvent } from "./EventProviders";
 
 export default function PosterCard() {
   const event = useEvent();
+  const posterExtension = event.downloadPoster.split(".").pop() || "jpg";
 
   return (
     <div className="card max-w-md mx-auto">
@@ -31,7 +32,7 @@ export default function PosterCard() {
         
         <Link
           href={event.downloadPoster}
-          download={`${event.name}-affiche.jpg`}
+          download={`${event.name}-affiche.${posterExtension}`}
           className="btn-primary inline-flex items-center gap-2"
         >
           <svg

@@ -354,21 +354,24 @@ const defaultTabContents: TabContent[] = [
 // Helper function to render collaboration
 const renderCollaboration = (collab: { name: string; website?: string; socials?: { instagram?: string; facebook?: string; youtube?: string } }) => (
   <div className="flex items-center gap-2">
-    {collab.website ? (
-      <a
-        href={collab.website}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="text-sm font-semibold text-brand hover:text-brand/80 underline transition-colors"
-      >
-        {collab.name}
-      </a>
-    ) : (
-      <p className="text-sm font-semibold text-slate-700">{collab.name}</p>
-    )}
-    {collab.socials && (
+    <p className="text-sm font-semibold text-slate-700">{collab.name}</p>
+    {(collab.website || collab.socials) && (
       <div className="flex gap-2">
-        {collab.socials.instagram && (
+        {collab.website && (
+          <a
+            href={collab.website}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-slate-500 hover:text-brand transition-colors"
+            aria-label={`Site web ${collab.name}`}
+          >
+            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <circle cx="12" cy="12" r="9" strokeWidth="2" />
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 12h18M12 3c2.5 2.6 3.8 5.7 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.7-3.8-9s1.3-6.4 3.8-9z" />
+            </svg>
+          </a>
+        )}
+        {collab.socials?.instagram && (
           <a
             href={collab.socials.instagram}
             target="_blank"
@@ -381,7 +384,7 @@ const renderCollaboration = (collab: { name: string; website?: string; socials?:
             </svg>
           </a>
         )}
-        {collab.socials.facebook && (
+        {collab.socials?.facebook && (
           <a
             href={collab.socials.facebook}
             target="_blank"
@@ -394,7 +397,7 @@ const renderCollaboration = (collab: { name: string; website?: string; socials?:
             </svg>
           </a>
         )}
-        {collab.socials.youtube && (
+        {collab.socials?.youtube && (
           <a
             href={collab.socials.youtube}
             target="_blank"
