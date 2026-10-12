@@ -71,15 +71,15 @@ export const ANIMATIONS_2026: TabContent[] = [
         },
       },
       {
-        title: "Cours d’initiation Lindy Hop – Association N’Swinge",
+        title: "Cours d’initiation Lindy Hop – Association N’Swing",
         description: [
-          "Entrez dans la danse avec La Clandestine ! Samedi à 14h30, initiez-vous au rock sauté et au boogie-woogie, puis admirez la démonstration à 15h."
+          "Découvre ce swing des années folles avec nos danseurs passionnés."
         ],
         image: "/images/2026/animations/danse/lindyhop.png",
         showMoreLink: false,
         dateTime: "Samedi 17h30- 20h",
         collaboration: {
-          name: "Asso Nswing",
+          name: "Olivier RIONDET - Association N'Swing",
           socials: {
             facebook: "https://www.facebook.com/asso.nswing.9/",
           },
