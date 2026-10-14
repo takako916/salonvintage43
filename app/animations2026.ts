@@ -296,8 +296,8 @@ export const ANIMATIONS_2026: TabContent[] = [
         collaboration: {  
           name: "M-R Coiffure",
           socials: {
-          facebook: "https://www.facebook.com/Tofmobile73/",
-          instagram: "https://www.facebook.com/profile.php?id=61580156046170",
+          facebook: "https://www.facebook.com/profile.php?id=61580156046170",
+          instagram: "https://www.instagram.com/rftmanon/",
           },
        },
       },
@@ -343,6 +343,7 @@ export const ANIMATIONS_2026: TabContent[] = [
       {
         title: "Confiseries en vrac – Bonbons",
         image: "/images/2026/animations/art/bonbons.png",
+        showMoreLink: false,   
         collaboration: {  
           name: "Bonbons",
         },
