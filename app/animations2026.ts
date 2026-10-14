@@ -198,6 +198,27 @@ export const ANIMATIONS_2026: TabContent[] = [
           },
        },
       },
+      {
+        title: "Retro Gaming – PRESS START",
+        description: [
+          "Avec PRESS START, découvrez ou redécouvrez les consoles d’autrefois et leurs jeux cultes, manette en main !",
+          "Un voyage rétro à partager en famille ou entre amis, samedi 31 octobre toute la journée.",
+        ],
+        image: "/images/2026/animations/jeux/retrogaming.png",
+        showMoreLink: false,
+        dateTime: "Samedi toute la journée",
+        collaboration: {
+          name: "PRESS START",
+       },
+      },
+      {
+        title: "Jeux d’arcade & machine de boxe",
+        description: [
+          "Retrouvez le plaisir des jeux d’autrefois sur nos bornes d’arcade et testez votre punch sur la machine de boxe ! Venez jouer librement et défier votre famille ou vos amis !",
+        ],
+        image: "/images/2026/animations/jeux/arcade.png",
+        showMoreLink: false,
+      },
       
     ],
   },
@@ -264,6 +285,82 @@ export const ANIMATIONS_2026: TabContent[] = [
           facebook: "https://www.facebook.com/Tofmobile73/",
           },
        },
+      },
+      {
+        title: "Démonstration de coiffures rétro",
+        image: "/images/2026/animations/art/mrcoiffure.jpg",
+        description: [
+          "Avec M-R Coiffure, découvrez l’art des coiffures rétro lors de démonstrations de looks pin-up réalisés sur les modèles.Retrouvez-les lors des défilés du samedi matin et de l’après-midi !",
+        ],
+        showMoreLink: false,   
+        collaboration: {  
+          name: "M-R Coiffure",
+          socials: {
+          facebook: "https://www.facebook.com/Tofmobile73/",
+          instagram: "https://www.facebook.com/profile.php?id=61580156046170",
+          },
+       },
+      },
+      {
+        title: "Accessoires en cuir – Ratskin’studio",
+        image: "/images/2026/animations/art/ratskinstudio.png",
+        description: [
+          "Découvrez les accessoires en cuir de Ratskin’studio : porte-monnaie, gants, portefeuilles et sacs à main. Des pièces de caractère pour compléter votre look ou vous faire plaisir !.",
+        ],
+        showMoreLink: false,   
+        collaboration: {  
+          name: "Ratskin’studio",
+        },
+      },
+      {
+        title: "Nail art – Lovadia Beauté des Ongles",
+        image: "/images/2026/animations/art/lovadia.png",
+        description: [
+          "Découvrez l’univers créatif de Lovadia et ses décorations d’ongles personnalisées. Venez trouver l’inspiration et échanger sur vos envies pour compléter votre look jusqu’au bout des ongles !",
+        ],
+        showMoreLink: false,   
+        collaboration: {  
+          name: "Lovadia Beauté des Ongles",
+          socials: {
+            instagram: "https://www.instagram.com/lovadiabeautedesongles/",
+          },
+       },
+      },
+      {
+        title: "Geek Vintage – Matthgo Cosplay",
+        image: "/images/2026/animations/art/geekvintage.jpg",
+        description: [
+          "Plongez dans un univers coloré de jouets rétro et d’objets en tout genre ! Retrouvez vos souvenirs d’enfance et dénichez une pièce coup de cœur pour votre collection ou votre déco.",
+        ],
+        showMoreLink: false,   
+        collaboration: {  
+          name: "Matthgo Cosplay",
+          socials: {
+            instagram: "https://www.instagram.com/matthgocosplay/",
+          },
+       },
+      },
+      {
+        title: "Confiseries en vrac – Bonbons",
+        image: "/images/2026/animations/art/bonbons.png",
+        collaboration: {  
+          name: "Bonbons",
+        },
+      },
+      {
+        title: "Friprie – Saperlipops",
+        image: "/images/2026/animations/art/friperie.png",
+        description: [
+          "Découvrez Saperlipops, la friperie de Brives-Charensac, et sa sélection de vêtements de seconde main. Venez dénicher vos coups de cœur et composer un look qui vous ressemble !",
+        ],
+        showMoreLink: false,   
+        collaboration: {  
+          name: "Saperlipops",
+          socials: {
+            instagram: "https://www.instagram.com/saperlipops/",
+            facebook: "https://www.facebook.com/SaperlipopS/",
+          },
+        },
       },
     ],
   },
