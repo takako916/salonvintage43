@@ -184,7 +184,7 @@ export const ANIMATIONS_2026: TabContent[] = [
         dateTime: "Samedi 11h00",
       },
       {
-        title: "Concours Just Dance – Matt Cosplay",
+        title: "Concours Just Dance – MatthgoDance",
         description: [
           "Défiez-vous sur Just Dance et montrez vos meilleurs pas ! Invitez votre famille et vos amis à participer au tournoi pour un moment de danse et de bonne humeur !",
         ],
@@ -192,7 +192,10 @@ export const ANIMATIONS_2026: TabContent[] = [
         showMoreLink: false,
         dateTime: "Samedi 17h00",
         collaboration: {
-          name: "Matt Cosplay",
+          name: "MatthgoDance",
+          socials: {
+            instagram: "https://www.instagram.com/matthgo.daance/",
+          },
        },
       },
       
@@ -226,8 +229,10 @@ export const ANIMATIONS_2026: TabContent[] = [
         showMoreLink: false,        
         collaboration: {  
           name: "Black Pearl Tattoo",
-          website: "https://www.instagram.com/black.pearl.tattoo.piercing",
-       },
+          socials: {
+          instagram: "https://www.instagram.com/black.pearl.tattoo.piercing",
+          },
+        },
       },
       {
         title: "Photo booth vintage",
@@ -246,7 +251,7 @@ export const ANIMATIONS_2026: TabContent[] = [
         image: "/images/2026/animations/art/sacretro.png",
         showMoreLink: false,   
         collaboration: {  
-          name: "Eauateur",
+          name: "Equateur",
        },
       },
       {
