@@ -255,7 +255,7 @@ export const ANIMATIONS_2026: TabContent[] = [
           },
         },
       },
-      {
+      /* {
         title: "Photo booth vintage",
         description: [
           "Venez dans votre plus belle tenue vintage et prenez la pose devant l’objectif de notre photographe ! Repartez avec un beau souvenir de votre voyage dans le temps.",
@@ -266,7 +266,7 @@ export const ANIMATIONS_2026: TabContent[] = [
           name: "Lise Plazanet",
           website: "https://www.liseplazanetphotographie.fr/",
        },
-      },
+      }, */
       {
         title: "Sac & valises en cuir au désign rétro",
         image: "/images/2026/animations/art/sacretro.png",
