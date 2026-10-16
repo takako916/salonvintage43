@@ -176,8 +176,7 @@ export const ANIMATIONS_2026: TabContent[] = [
       {
         title: "Tournoi de baby-foot",
         description: [
-          "Testez votre rapidité lors d’un concours de Rubik’s Cube !",
-          "Venez relever le défi et tentez de remporter un prix !",
+          "Formez votre équipe de deux et participez au tournoi de baby-foot ! En duo parent-enfant ou entre amis, venez défier les autres équipes dans une ambiance conviviale !",
         ],
         image: "/images/2026/animations/jeux/babyfoot.png",
         showMoreLink: false,
@@ -367,6 +366,21 @@ export const ANIMATIONS_2026: TabContent[] = [
         title: "Affiches 3D de Films,Séries,Chanteurs et Jeux Vidéos.",
         image: "/images/2026/animations/art/affiche.png",
         showMoreLink: false,   
+      },
+      {
+        title: "Bijoux vintage & créations personnalisées – Chizoukou",
+        image: "/images/2026/animations/art/bijoux.png",
+        description: [
+          "Découvrez des bijoux fantaisie vintage, des créations à partir de boutons anciens et des bijoux en origami. Choisissez vos charms pour personnaliser un collier ou un bracelet et composer un bijou qui vous ressemble !",
+        ],
+        showMoreLink: false,   
+        collaboration: {  
+          name: "Chizoukou",
+          socials: {
+            instagram: "https://www.instagram.com/origamichizoukou/",
+            facebook: "https://www.facebook.com/chizoukou/",
+          },
+        },
       },
     ],
   },
