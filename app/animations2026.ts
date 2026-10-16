@@ -199,7 +199,7 @@ export const ANIMATIONS_2026: TabContent[] = [
        },
       },
       {
-        title: "Retro Gaming – PRESS START",
+        title: "Retro Gaming – PRESS START RETROGAMING",
         description: [
           "Avec PRESS START, découvrez ou redécouvrez les consoles d’autrefois et leurs jeux cultes, manette en main !",
           "Un voyage rétro à partager en famille ou entre amis, samedi 31 octobre toute la journée.",
@@ -208,7 +208,7 @@ export const ANIMATIONS_2026: TabContent[] = [
         showMoreLink: false,
         dateTime: "Samedi toute la journée",
         collaboration: {
-          name: "PRESS START",
+          name: "PRESS START RETROGAMING",
        },
       },
       {
@@ -362,6 +362,11 @@ export const ANIMATIONS_2026: TabContent[] = [
             facebook: "https://www.facebook.com/SaperlipopS/",
           },
         },
+      },
+      {
+        title: "Affiches 3D de Films,Séries,Chanteurs et Jeux Vidéos.",
+        image: "/images/2026/animations/art/affiche.png",
+        showMoreLink: false,   
       },
     ],
   },
